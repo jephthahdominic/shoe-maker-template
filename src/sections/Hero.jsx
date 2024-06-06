@@ -10,7 +10,7 @@ const Hero = () => {
   return (
     <section className='w-full max-container flex items-center xl:flex-row flex-col
     min-h-screen gap-10'>
-        <div className='flex-col gap-4 w-full max-container padding-r padding-l pt-40'>
+        <div className='flex-col gap-4 w-full max-container padding-r pt-40 max-xl:padding-x'>
             <h1 className='font-montserrat text-8xl max-sm:text-[72px] max-sm:leading-[82px] text-bold text-white-400'>
                 A <span className='text-amber-900'> Style </span> for 
                 <br/>
