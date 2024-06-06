@@ -10,11 +10,11 @@ const Hero = () => {
   return (
     <section className='w-full max-container flex items-center xl:flex-row flex-col
     min-h-screen gap-10'>
-        <div className='flex-col gap-4 w-full max-container padding-r pt-40 max-xl:padding-x'>
+        <div className='flex-col gap-4 w-full max-container padding-r pt-28 max-xl:padding-x'>
             <h1 className='font-montserrat text-8xl max-sm:text-[72px] max-sm:leading-[82px] text-bold text-white-400'>
-                A <span className='text-amber-900'> Style </span> for 
+                A <span className='text-amber-900'> Style </span> 
                 <br/>
-                Every Story
+                for Every Story
             </h1>
             <p className='text-xl text-slate-gray leading-normal font-roboto mt-4 tracking-normal'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum omnis doloribus aliquid similique voluptatem mollitia
             ipsa autem in nulla odio vero iure aperiam, quas sunt. Nobis dolorem ipsa perspiciatis fuga?</p>
@@ -33,6 +33,7 @@ const Hero = () => {
                 alt='Classic man on shoes'
                 width={1400}
                 height={610}
+                className='className="object-contain relative'
             />
             <div className='p-1 mt-8 w-max m-auto flex flex-1 gap-4 absolute right-5 bottom-5 items-center justify-end'>
                 {classicMen.map((man)=>(
