@@ -24,18 +24,19 @@ export const shoes = [
 ];
 
 export const classicMen = [
+    // {
+    //     imgURL: manOnShoes1,
+    //     alt:"Man wearing classic shoes"
+    // },
     {
-        imgURL: manOnShoes1,
+        imgURL: manOnShoes3,
         alt:"Man wearing classic shoes"
     },
     {
         imgURL: manOnShoes2,
         alt:"Man wearing classic shoes"
-    },
-    {
-        imgURL: manOnShoes3,
-        alt:"Man wearing classic shoes"
     }
+    
 ]
 
 export const popularProducts = [

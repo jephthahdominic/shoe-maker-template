@@ -27,13 +27,13 @@ const Hero = () => {
                 />
             </div>
         </div>
-        <div className='relative max-container flex xl:min-h-screen items-end'>
+        <div className='relative max-container flex xl:min-h-screen items-end w-full pt-2 px-2'>
             <img
                 src={bigClassicMan}
                 alt='Classic man on shoes'
                 width={1400}
                 height={610}
-                className='className="object-contain relative'
+                className='object-contain rounded-md'
             />
             <div className='p-1 mt-8 w-max m-auto flex flex-1 gap-4 absolute right-5 bottom-5 items-center justify-end'>
                 {classicMen.map((man)=>(

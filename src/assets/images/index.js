@@ -1,4 +1,4 @@
-import standAloneShoe1 from './Brown-Shoes-PNG-Image.png';
+import standAloneShoe1 from './standaloneShoe1.png';
 import bigShoe2 from './Men Shoes - 640x414.png';
 import bigShoe3 from './Klassicheskie Muzhskie  Men Shoes - 640x512.png';
 import collectionBg from './collection-background.svg';

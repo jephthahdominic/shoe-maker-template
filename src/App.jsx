@@ -9,23 +9,23 @@ function App() {
           {/*Idea from digital agency*/}
           <Navbar />
         </div>
-        <section className="xl:padding-l wide:padding-r xl:padding-b bg-tint">
+        <section className="xl:padding-l wide:padding-r xl:pb-2 bg-tint">
           {/*Text arrangement: Link to behance mood board, Digital agency portfolio */}
           {/* IMage: ORganization from the nike project created with tailwind css*/}
           <Hero />
         </section>
-        <section>
-          {/*Link to the nike website i created with tailwinf*/}
-          <Popular/>
-        </section>
-        <section>
+        <section className="max-xl:padding px-10 py-16">
           {/*Link to the nike website i used to learn tailwind*/}
           <About/>
         </section>
-        <section>
+        <section className="padding bg-amber-900">
           {/*Text arrangement: Link to behance mood board, Digital agency portfolio */}
           {/**This is going to be a slider on mobile screens and horizontally aligned on larger screens */}
           <Services />
+        </section>
+        <section>
+          {/*Link to the nike website i created with tailwinf*/}
+          <Popular/>
         </section>
         <section>
           {/*Inspirtation from the nike project done with tailwind*/}
