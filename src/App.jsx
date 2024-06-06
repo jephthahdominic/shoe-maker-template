@@ -1,40 +1,43 @@
+import Navbar from "./components/Navbar"
+import { About, Contact, Hero, Popular, Reviews, Services, Special } from "./sections"
+
 function App() {
   return (
     <>
-      <main className="bg-tint text-white">
+      <main className="relative">
         <div>
           {/*Idea from digital agency*/}
-          NavBar
+          <Navbar />
         </div>
-        <section>
+        <section className="xl:padding-l wide:padding-r 2xl:padding-b bg-tint">
           {/*Text arrangement: Link to behance mood board, Digital agency portfolio */}
           {/* IMage: ORganization from the nike project created with tailwind css*/}
-          <p>Hero</p>
+          <Hero />
         </section>
         <section>
           {/*Link to the nike website i created with tailwinf*/}
-          <p>Popular Products</p>
+          <Popular/>
         </section>
         <section>
           {/*Link to the nike website i used to learn tailwind*/}
-          <p>About Us</p>
+          <About/>
         </section>
         <section>
           {/*Text arrangement: Link to behance mood board, Digital agency portfolio */}
           {/**This is going to be a slider on mobile screens and horizontally aligned on larger screens */}
-          <p>Services</p>
+          <Services />
         </section>
         <section>
           {/*Inspirtation from the nike project done with tailwind*/}
-          <p>Special Offer</p>
+          <Special />
         </section>
         <section>
           {/*Get from behance the only portfolio design */}
-          <p>reviews</p>
+          <Reviews />
         </section>
         <section>
           {/**Idea from Masoary on mood board */}
-          <p>contact us</p>
+          <Contact/>
         </section>
       </main>
     </>

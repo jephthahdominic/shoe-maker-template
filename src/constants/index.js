@@ -1,13 +1,10 @@
-import {bigShoe2, bigShoe3, bigShoe1, shoe5, shoe6, shoe7, shoe8, customer1, customer2} from '../assets/images/index'
+import {bigShoe2, bigShoe3, bigShoe1, shoe5, shoe6, shoe7, shoe8, customer1, customer2, manOnShoes1, manOnShoes2, manOnShoes3} from '../assets/images/index'
 import { facebook, instagram, shieldTick, support, truckFast, twitter } from '../assets/icons/index';
 
 export const navLinks = [
     {"url":"#", "label":"Home"},
     {"url":"#about", "label":"About Us"},
-    {"url":"#services", "label":"Services"},
-    {"url":"#showcase", "label":"Showcase"},
-    {"url":"#offers", "label":"Offers"},
-    {"url": "#reviews", "label":"Reviews"},
+    {"url":"#showcase", "label":"Products"},
     {"url":"#contact", "label":"Contact us"}
 ];
 
@@ -25,6 +22,21 @@ export const shoes = [
         alt:"Leather shoe"
     },
 ];
+
+export const classicMen = [
+    {
+        imgURL: manOnShoes1,
+        alt:"Man wearing classic shoes"
+    },
+    {
+        imgURL: manOnShoes2,
+        alt:"Man wearing classic shoes"
+    },
+    {
+        imgURL: manOnShoes3,
+        alt:"Man wearing classic shoes"
+    }
+]
 
 export const popularProducts = [
     {
