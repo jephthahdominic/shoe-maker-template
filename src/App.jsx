@@ -9,7 +9,7 @@ function App() {
           {/*Idea from digital agency*/}
           <Navbar />
         </div>
-        <section className="xl:padding-l wide:padding-r xl:pb-2 bg-tint">
+        <section className="xl:padding-l wide:padding-r max-xl:pb-2 bg-tint padding-b padding-t">
           {/*Text arrangement: Link to behance mood board, Digital agency portfolio */}
           {/* IMage: ORganization from the nike project created with tailwind css*/}
           <Hero />

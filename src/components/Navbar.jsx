@@ -8,7 +8,7 @@ const Navbar = () => {
   return (
     <header className='padding-x py-8 absolute z-10 w-full'>
         <nav className='flex justify-between items-center max-container'>
-            <div className='flex items-center max-sm:flex-row-reverse max-sm:w-full justify-between sm:gap-4'>
+            <div className='flex items-center max-xl:flex-row-reverse max-lg:w-full justify-between sm:gap-4'>
                 <img
                     src={hamburger}
                     alt='open side bar'
@@ -32,7 +32,7 @@ const Navbar = () => {
                     </li>
                 ))}
             </ul>
-            <div className='max-sm:hidden'>
+            <div className='max-lg:hidden'>
                 <Button
                     label="Let's talk"
                     icon={northEast}

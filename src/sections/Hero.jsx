@@ -1,16 +1,16 @@
 import React, { useState } from 'react'
 import Button from '../components/Button'
 import { arrowRight, northEast } from '../assets/icons'
-import { manOnShoes1, standAloneShoe1 } from '../assets/images'
+import { manOnShoes1, manOnShoes3, standAloneShoe1 } from '../assets/images'
 import { classicMen } from '../constants'
 import ClassicMenCard from '../components/ClassicMenCard'
 
 const Hero = () => {
-    const [bigClassicMan, setBigClassicMan] = useState(manOnShoes1)
+    const [bigClassicMan, setBigClassicMan] = useState(manOnShoes3)
   return (
     <section className='w-full max-container flex items-center xl:flex-row flex-col
     min-h-screen gap-10'>
-        <div className='flex-col gap-4 w-full max-container padding-r pt-28 max-xl:padding-x'>
+        <div className='flex-col gap-4 w-full max-container padding-r padding-t max-xl:padding-x'>
             <h1 className='font-montserrat text-8xl max-sm:text-[72px] max-sm:leading-[82px] text-bold text-white-400'>
                 A <span className='text-amber-900'> Style </span> 
                 <br/>

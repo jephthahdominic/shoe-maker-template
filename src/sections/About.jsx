@@ -5,7 +5,7 @@ import { arrowRight } from '../assets/icons'
 
 const About = () => {
   return (
-    <section id='about' className='w-full max-content flex flex-row-reverse justify-beween items-center max-xl:flex-col'>
+    <section id='about' className='w-full max-container flex flex-row-reverse gap-10 justify-beween items-center max-xl:flex-col'>
       <div className='flex flex-col'>
         <h2 className='text-4xl max-sm:text-md'>About <span className='text-amber-900'>Lorem Footwears</span></h2>
         <p className='mt-2 info-text'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit inventore voluptate praesentium natus eos consequuntur. 
