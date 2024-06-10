@@ -2,7 +2,7 @@ import React from 'react'
 
 const ShoeCard = ({imgURL, name, price, alt}) => {
   return (
-    <div className='border border-slate-200 p-4 rounded-md'>
+    <div className='border border-slate-200 p-4 rounded-md max-sm:w-max'>
       <img
         src={imgURL}
         alt={alt}
