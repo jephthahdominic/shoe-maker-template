@@ -2,7 +2,7 @@ import React from 'react'
 
 const ServiceCard = ({icon, service, subText}) => {
   return (
-    <div className='w-full max-container p-10 mt-10 rounded-md flex-1 border min-h-[250px] border-white-400 text-left max-xl:text-center'>
+    <div className='w-full max-container p-10 mt-10 rounded-md flex-1 border min-h-[200px] border-white-400 text-left max-xl:text-center'>
         <div className='max-container flex items-center max-xl:flex-col gap-2'>
             <img
                 src={icon}

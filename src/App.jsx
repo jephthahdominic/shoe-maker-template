@@ -1,5 +1,5 @@
 import Navbar from "./components/Navbar"
-import { About, Contact, Hero, Popular, Reviews, Services, Special } from "./sections"
+import { About, Contact, Gallery, Hero, Popular, Products, Reviews, Services, Special } from "./sections"
 
 function App() {
   return (
@@ -21,7 +21,16 @@ function App() {
         <section className="padding bg-amber-900">
           {/*Text arrangement: Link to behance mood board, Digital agency portfolio */}
           {/**This is going to be a slider on mobile screens and horizontally aligned on larger screens */}
-          <Services />
+          <Gallery />
+        </section>
+        {/* <section className="padding bg-amber-900">
+          {/*Text arrangement: Link to behance mood board, Digital agency portfolio */}
+          {/**This is going to be a slider on mobile screens and horizontally aligned on larger screens */}
+          {/* <Services />
+        </section> */}
+        <section className="padding">
+          {/*Link to the nike website i created with tailwinf*/}
+          <Products/>
         </section>
         <section>
           {/*Link to the nike website i created with tailwinf*/}

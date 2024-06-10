@@ -11,10 +11,10 @@ const Hero = () => {
     <section className='w-full max-container flex items-center xl:flex-row flex-col
     min-h-screen gap-10'>
         <div className='flex-col gap-4 w-full max-container padding-r padding-t max-xl:padding-x'>
-            <h1 className='font-montserrat text-8xl max-sm:text-[72px] max-sm:leading-[82px] text-bold text-white-400'>
-                A <span className='text-amber-900'> Style </span> 
+            <h1 className='font-montserrat text-[62px]  max-sm:text-[72px] max-sm:leading-[82px] text-bold text-white-400'>
+                A <span className='text-amber-900'> Perfect Shoe </span> 
                 <br/>
-                for Every Story
+                Changes the Game
             </h1>
             <p className='text-xl text-slate-gray leading-normal font-roboto mt-4 tracking-normal'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum omnis doloribus aliquid similique voluptatem mollitia
             ipsa autem in nulla odio vero iure aperiam, quas sunt. Nobis dolorem ipsa perspiciatis fuga?</p>

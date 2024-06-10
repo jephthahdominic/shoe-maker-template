@@ -16,7 +16,7 @@ const About = () => {
         Asperiores quae facere ea ratione possimus animi in fugiat consequuntur aperiam? Sit debitis illum nihil.</p>
         <div className='flex items-center gap-4 mt-2'>
           <Button 
-            label='Contact us'
+            label='Order now'
             borderColor='border-amber-900'
             backgroundColor='bg-transparent'
             color='text-black'

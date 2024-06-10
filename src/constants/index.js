@@ -1,4 +1,4 @@
-import {bigShoe2, bigShoe3, bigShoe1, shoe5, shoe6, shoe7, shoe8, customer1, customer2, manOnShoes1, manOnShoes2, manOnShoes3} from '../assets/images/index'
+import {shoe5, shoe6, shoe7, customer1, customer2, manOnShoes1, manOnShoes2, manOnShoes3, sandals1, sandals2, sandals3, shoe1, shoe2, shoe3, shoe4} from '../assets/images/index'
 import { facebook, instagram, shieldTick, support, truckFast, twitter } from '../assets/icons/index';
 
 export const navLinks = [
@@ -10,17 +10,67 @@ export const navLinks = [
 
 export const shoes = [
     {
-        bigShoe: bigShoe1,
+        imgURL: shoe1,
+        name:"Leather Brogue for men",
+        price:"N15000",
         alt:"Leather shoe"
     },
     {
-        bigShoe: bigShoe2,
+        imgURL: shoe2,
+        name:"Leather Brogue for men",
+        price:"N15000",
         alt:"Leather shoe"
     },
     {
-        bigShoe: bigShoe3,
+        imgURL: shoe3,
+        name:"Leather Brogue for men",
+        price:"N15000",
         alt:"Leather shoe"
     },
+    {
+        imgURL: shoe4,
+        name:"Leather Brogue for men",
+        price: "N15000",
+        alt:"Leather shoe"
+    },
+    {
+        imgURL:shoe5,
+        name:"Brown Leather Shoe for men",
+        price:"N15000",
+        alt:"Leather shoe"
+    },
+    {
+        imgURL:shoe6,
+        name:"Brown Leather shoe for men",
+        price:"N15000",
+        alt:"Leather shoe"
+    },
+    {
+        imgURL: shoe7,
+        name:"Brown high-sole Brogue for men",
+        price:"N15000",
+        alt:"Leather shoe"
+    }
+];
+export const sandals = [
+    {
+        imgURL: sandals1,
+        label: "Brown leather sandals for men",
+        alt: "Leather sandals",
+        price: "N14000"
+    },
+    {
+        imgURL: sandals2,
+        label:"Brown leather sandals for men",
+        alt:"Leather sandals",
+        price: "N13000"
+    },
+    {
+        imgURL: sandals3,
+        label:"Black Leather sandals for men",
+        alt:"Leather sandals",
+        price: "N12000"
+    }
 ];
 
 export const classicMen = [
@@ -39,29 +89,6 @@ export const classicMen = [
     
 ]
 
-export const popularProducts = [
-    {
-        imgURL: shoe5,
-        name:"Brown leather Brogue for men",
-        price: "N15000"
-    },
-    {
-        imgURL:shoe6,
-        name:"Brown Leather Shoe for men",
-        price:"N15000"
-    },
-    {
-        imgURL:shoe7,
-        name:"Brown Leather shoe for men",
-        price:"N15000"
-    },
-    {
-        imgURL: shoe8,
-        name:"Brown high-sole Brogue for men",
-        price:"N15000"
-    }
-];
-
 export const services = [
     {
         imgURL: truckFast,
@@ -78,6 +105,15 @@ export const services = [
         label: "Love to help you",
         subtext: "Our dedicated team is here to assist you every step of the way."
     },
+];
+
+export const categories = [
+    {
+        label: "Men's corporate shoes",
+    },
+    {
+        label: "Men's corporate sandals",
+    }
 ];
 
 export const reviews = [
