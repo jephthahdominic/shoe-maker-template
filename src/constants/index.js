@@ -2,21 +2,15 @@ import {shoe5, shoe6, shoe7, customer1, customer2, manOnShoes1, manOnShoes2, man
 import { facebook, instagram, shieldTick, support, truckFast, twitter } from '../assets/icons/index';
 
 export const navLinks = [
-    {"url":"#", "label":"Home"},
+    {"url":"/", "label":"Home"},
     {"url":"#about", "label":"About Us"},
-    {"url":"#showcase", "label":"Products"},
+    {"url":"#products", "label":"Products"},
     {"url":"#contact", "label":"Contact us"}
 ];
 
 export const shoes = [
     {
         imgURL: shoe1,
-        name:"Leather Brogue for men",
-        price:"N15000",
-        alt:"Leather shoe"
-    },
-    {
-        imgURL: shoe2,
         name:"Leather Brogue for men",
         price:"N15000",
         alt:"Leather shoe"

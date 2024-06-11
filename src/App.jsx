@@ -1,5 +1,5 @@
 import Navbar from "./components/Navbar"
-import { About, Contact, Gallery, Hero, Popular, Products, Reviews, Services, Special } from "./sections"
+import { About, Contact, Footer, Gallery, Hero, Popular, Products, Reviews, Services, Special } from "./sections"
 
 function App() {
   return (
@@ -33,20 +33,15 @@ function App() {
           <Products/>
         </section>
         <section>
-          {/*Link to the nike website i created with tailwinf*/}
-          <Popular/>
-        </section>
-        <section>
-          {/*Inspirtation from the nike project done with tailwind*/}
-          <Special />
-        </section>
-        <section>
           {/*Get from behance the only portfolio design */}
           <Reviews />
         </section>
         <section>
           {/**Idea from Masoary on mood board */}
           <Contact/>
+        </section>
+        <section>
+          <Footer />
         </section>
       </main>
     </>

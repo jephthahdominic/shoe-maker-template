@@ -8,8 +8,8 @@ const Products = () => {
   return (
     <section className='w-full max-container'>
         <h2 className='text-4xl font-montserrat'>Our <span className='text-amber-900'>Collections</span></h2>
-        <div className='w-full flex max-xl:flex-col mt-8 gap-4' >
-            <nav className=' flex-auto w-fit flex flex-col max-xl:flex-row max-xl:gap-8 gap-2 p-4 max-md:justify-between'>
+        <div className='w-full flex flex-1 max-xl:flex-col mt-8 gap-4' >
+            <nav className=' flex-auto flex flex-col max-xl:flex-row max-xl:gap-8 gap-2 py-4 max-md:justify-between'>
                 {categories.map((category)=>(
                     <Category
                         key={category.label}
@@ -20,7 +20,7 @@ const Products = () => {
                 ))}
             </nav>
             <div className='px-4'>
-                {currentCategory == "Men's corporate shoes" && <div className='grid xl:grid-cols-4 sm:grid-cols-2 md:grid-cols-3 gap-5 p-4'>
+                {currentCategory === "Men's corporate shoes" && <div className='grid xl:grid-cols-4 sm:grid-cols-2 md:grid-cols-3 grid-cols-1 sm:gap-4 gap-9 p-4'>
                     {shoes.map((shoe,id)=>(
                         <ShoeCard
                             key={id}
@@ -31,8 +31,8 @@ const Products = () => {
                         />
                     ))}
                 </div>}
-                {currentCategory == "Men's corporate sandals" && <div className='grid grid-cols-4 gap-5 p-4'>
-                    {sandals.map((sandal,id)=>{
+                {currentCategory === "Men's corporate sandals" && <div className='grid xl:grid-cols-4 sm:grid-cols-2 md:grid-cols-3 grid-cols-1 sm:gap-4 gap-9 p-4'>
+                    {sandals.map((sandal,id)=>(
                         <ShoeCard 
                             key={id}
                             imgURL={sandal.imgURL}
@@ -40,7 +40,7 @@ const Products = () => {
                             price={sandal.price}
                             alt={sandal.alt}
                         />
-                    })}  
+                    ))}  
                 </div>}
                 
             </div>
