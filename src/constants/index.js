@@ -32,19 +32,8 @@ export const shoes = [
         name:"Brown Leather Shoe for men",
         price:"N15000",
         alt:"Leather shoe"
-    },
-    {
-        imgURL:shoe6,
-        name:"Brown Leather shoe for men",
-        price:"N15000",
-        alt:"Leather shoe"
-    },
-    {
-        imgURL: shoe7,
-        name:"Brown high-sole Brogue for men",
-        price:"N15000",
-        alt:"Leather shoe"
     }
+    
 ];
 export const sandals = [
     {
