@@ -13,10 +13,19 @@ export default {
       xl: ['20px', '24.38px'],
       '2xl': ['24px', '29.26px'],
       '3xl': ['28px', '50px'],
-      '4xl': ['48px', '58px'],
+      '4xl': ['40px', '58px'],
       '8xl': ['96px', '106px']
     },
     extend: {
+      keyframes:{
+        fade: {
+          '0%': {opacity: 0},
+          '100%': {opacity: 1}
+        }
+      },
+      animation: {
+        'fade':'fade 3s linear 1'
+      },
       fontFamily: {
         palanquin: ['Palanquin', 'sans-serif'],
         montserrat: ['Montserrat', 'sans-serif'],

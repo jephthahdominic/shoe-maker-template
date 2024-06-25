@@ -3,15 +3,15 @@ import { speech } from '../assets/videos'
 
 const Gallery = () => {
   return (
-    <section id='gallery' className='w-full max-container flex max-xl:flex-col gap-10 justify-between items-center'>
+    <section id='gallery' className='w-full max-container flex max-xl:flex-col gap-10 justify-between items-center'  data-aos="zoom-in" data-aos-duration = "500" data-aos-once = "false" data-aos-easing = "ease-in-out">
         <div className='text-left'>
-            <h2 className='font-montserrat text-4xl max-sm:text-md max-xl:text-left text-white text-bold'>Designing the Perfect Story</h2>
-            <p className='text-xl text-white-400 font-montserrat leading-normal '>In a journey of uncertainties, great people don't quit</p>
+            <h2 className='font-palanquin text-4xl max-sm:text-md max-xl:text-left text-white text-bold'>Designing for the Perfect Story</h2>
+            <p className='text-xl text-white-400 font-montserrat leading-normal mt-3'>In a journey of uncertainties, great people don't quit</p>
         </div>
         <div className=''>
            <video
                 src={speech}
-                width={700}
+                width={600}
                 controls
                 aria-hidden
                 className='object-contain rounded-md'

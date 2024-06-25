@@ -2,14 +2,17 @@ import React, { useState } from 'react'
 import { categories, sandals, shoes } from '../constants'
 import Category from '../components/Category'
 import ShoeCard from '../components/ShoeCard'
+import { arrowRight, chevronRight } from '../assets/icons'
 
 const Products = () => {
-    const[currentCategory, setCurrentCategory] = useState("Men's corporate shoes");
+    const[currentCategory, setCurrentCategory] = useState("Men's shoes");
+    const [displayAll, setDIsplayAll] = useState(false)
   return (
-    <section className='w-full max-container'>
-        <h2 className='text-4xl font-montserrat'>Our <span className='text-amber-900'>Collections</span></h2>
-        <div className='w-full flex flex-1 max-xl:flex-col mt-8 gap-4' >
-            <nav className=' flex-auto flex flex-col max-xl:flex-row max-xl:gap-8 gap-2 py-4 max-md:justify-between'>
+    <section className='w-full max-container' id='products' data-aos="zoom-in" data-aos-duration = "500" data-aos-once = "false" data-aos-easing = "ease-in-out" data-aos-delay = "50">
+        <h2 className=' text-4xl font-montserrat'>We are passionate about <span className='text-amber-900'>quality</span></h2>
+        <div className='w-full mt-2 leading-normal text-slate-gray xl:flex justify-between align-top'>
+            <p className='text-xl xl:w-[70%] font-montserrat'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum nobis eius praesentium blanditiis doloribus officia nostrum.</p>
+            <nav className='max-xl:mt-6 flex max-xl:justify-start max-xl:gap-5 gap-8 xl:pr-5'>
                 {categories.map((category)=>(
                     <Category
                         key={category.label}
@@ -19,9 +22,11 @@ const Products = () => {
                     />
                 ))}
             </nav>
-            <div className='px-4'>
-                {currentCategory === "Men's corporate shoes" && <div className='grid xl:grid-cols-4 sm:grid-cols-2 md:grid-cols-3 grid-cols-1 sm:gap-4 gap-9 p-4'>
-                    {shoes.map((shoe,id)=>(
+        </div>
+        <div className='w-full flex flex-1 max-xl:flex-col max-xl:mt-4 mt-8 gap-4' >
+            <div className='w-full'>
+                {currentCategory === "Men's shoes" && <><div className='w-full grid xl:grid-cols-4 sm:grid-cols-2 md:grid-cols-3 grid-cols-2 sm:gap-2 gap-2'>
+                    {shoes.filter(shoe => !displayAll ? shoe.id <= 4 : shoe.id <= 8).map((shoe,id)=>(
                         <ShoeCard
                             key={id}
                             imgURL={shoe.imgURL}
@@ -30,8 +35,18 @@ const Products = () => {
                             alt={shoe.alt}
                         />
                     ))}
-                </div>}
-                {currentCategory === "Men's corporate sandals" && <div className='grid xl:grid-cols-4 sm:grid-cols-2 md:grid-cols-3 grid-cols-1 sm:gap-4 gap-9 p-4'>
+                </div>
+                <div className='w-full m-auto flex justify-center p-4 mt-8'>
+                    <button>
+                        <img 
+                        src= {chevronRight} 
+                        alt= 'Show more'
+                        className={`${!displayAll ? 'rotate-90': 'rotate-[270deg]'}`}
+                        onClick={()=>displayAll ? setDIsplayAll(false):setDIsplayAll(true)}
+                        />
+                    </button>
+                </div></>}
+                {currentCategory === "Men's sandals" && <div className='w-full grid xl:grid-cols-4 sm:grid-cols-2 md:grid-cols-3 grid-cols-2 sm:gap-2 gap-2'>
                     {sandals.map((sandal,id)=>(
                         <ShoeCard 
                             key={id}

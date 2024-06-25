@@ -5,8 +5,9 @@ import { manOnShoes1, manOnShoes3, standAloneShoe1 } from '../assets/images'
 import { classicMen } from '../constants'
 import ClassicMenCard from '../components/ClassicMenCard'
 
-const Hero = () => {
-    const [bigClassicMan, setBigClassicMan] = useState(manOnShoes3)
+const Hero = ({...props}) => {
+    const [bigClassicMan, setBigClassicMan] = useState(manOnShoes3);
+    const [animate, setAnimate] = useState(false);
   return (
     <section className='w-full max-container flex items-center xl:flex-row flex-col
     min-h-screen gap-10'>
@@ -24,6 +25,8 @@ const Hero = () => {
                     icon={arrowRight}
                     color='text-white-400'
                     borderColor='border-amber-900'
+                    backgroundColor='bg-transparent'
+                    borderOnHover='hover:border-white-400'
                 />
             </div>
         </div>
@@ -33,7 +36,7 @@ const Hero = () => {
                 alt='Classic man on shoes'
                 width={1400}
                 height={610}
-                className='object-contain rounded-md'
+                className= {`object-contain rounded-md ${animate && 'animate-fade'}`}
             />
             <div className='p-1 mt-8 w-max m-auto flex flex-1 gap-4 absolute right-5 bottom-5 items-center justify-end'>
                 {classicMen.map((man)=>(
@@ -42,6 +45,7 @@ const Hero = () => {
                             imgURL={man.imgURL} 
                             alt={man.alt}
                             bigClassicMan = {bigClassicMan}
+                            startAnimate = {()=>{setAnimate(true)}}
                             changeBigClassicMan = {(classicMan)=>{setBigClassicMan(classicMan)}}
                         />
                     </div>

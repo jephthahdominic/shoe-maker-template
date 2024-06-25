@@ -10,29 +10,61 @@ export const navLinks = [
 
 export const shoes = [
     {
+        id: 1,
         imgURL: shoe1,
         name:"Leather Brogue for men",
         price:"N15000",
         alt:"Leather shoe"
     },
     {
+        id:2,
         imgURL: shoe3,
         name:"Leather Brogue for men",
         price:"N15000",
         alt:"Leather shoe"
     },
     {
+        id: 3,
         imgURL: shoe4,
         name:"Leather Brogue for men",
         price: "N15000",
         alt:"Leather shoe"
     },
     {
+        id: 4,
         imgURL:shoe5,
-        name:"Brown Leather Shoe for men",
+        name:"Leather Shoe for men",
         price:"N15000",
         alt:"Leather shoe"
-    }
+    },
+    {
+        id: 5,
+        imgURL:shoe5,
+        name:"Leather Shoe for men",
+        price:"N15000",
+        alt:"Leather shoe"
+    },
+    {
+        id: 6,
+        imgURL:shoe5,
+        name:"Leather Shoe for men",
+        price:"N15000",
+        alt:"Leather shoe"
+    },
+    {
+        id:7,
+        imgURL:shoe5,
+        name:"Leather Shoe for men",
+        price:"N15000",
+        alt:"Leather shoe"
+    },
+    {
+        id: 8,
+        imgURL:shoe5,
+        name:"Leather Shoe for men",
+        price:"N15000",
+        alt:"Leather shoe"
+    },
     
 ];
 export const sandals = [
@@ -92,10 +124,10 @@ export const services = [
 
 export const categories = [
     {
-        label: "Men's corporate shoes",
+        label: "Men's shoes",
     },
     {
-        label: "Men's corporate sandals",
+        label: "Men's sandals",
     }
 ];
 
@@ -118,7 +150,7 @@ export const socialMedia = [
     {
         imgURL: facebook,
         alt:"Facebook",
-        Url: "",
+        url: "",
     },
     {
         imgURL: instagram,

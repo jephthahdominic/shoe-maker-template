@@ -1,10 +1,11 @@
 import React from 'react'
 
-const ClassicMenCard = ({imgURL, bigClassicMan, changeBigClassicMan}) => {
+const ClassicMenCard = ({imgURL, bigClassicMan, changeBigClassicMan, startAnimate}) => {
     const handleClick = () => {
-        if(bigClassicMan !== imgURL){
-            changeBigClassicMan(imgURL)
-        }
+      if(bigClassicMan !== imgURL){
+          changeBigClassicMan(imgURL);
+          startAnimate();
+      }
     }
   return (
     <div onClick={handleClick}>
