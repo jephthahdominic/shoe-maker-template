@@ -21,7 +21,7 @@ function App() {
           {/*Link to the nike website i used to learn tailwind*/}
           <About/>
         </section>
-        <section className="padding bg-amber-900">
+        <section className="padding bg-tint">
           {/*Text arrangement: Link to behance mood board, Digital agency portfolio */}
           {/**This is going to be a slider on mobile screens and horizontally aligned on larger screens */}
           <Gallery />

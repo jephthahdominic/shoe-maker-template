@@ -9,9 +9,10 @@ const Products = () => {
     const [displayAll, setDIsplayAll] = useState(false)
   return (
     <section className='w-full max-container' id='products' data-aos="zoom-in" data-aos-duration = "500" data-aos-once = "false" data-aos-easing = "ease-in-out" data-aos-delay = "50">
-        <h2 className=' text-4xl font-montserrat'>We are passionate about <span className='text-amber-900'>quality</span></h2>
+        <h2 className=' text-4xl font-montserrat'>We are passionate 
+        <span className='block sm:inline'> about<span className='text-amber-900'> quality</span></span></h2>
         <div className='w-full mt-2 leading-normal text-slate-gray xl:flex justify-between align-top'>
-            <p className='text-xl xl:w-[70%] font-montserrat'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum nobis eius praesentium blanditiis doloribus officia nostrum.</p>
+            <p className='text-xl xl:w-[70%] font-roboto'>Lorem ipsum, dolor sit amet consectetur.</p>
             <nav className='max-xl:mt-6 flex max-xl:justify-start max-xl:gap-5 gap-8 xl:pr-5'>
                 {categories.map((category)=>(
                     <Category
