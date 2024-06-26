@@ -21,10 +21,20 @@ export default {
         fade: {
           '0%': {opacity: 0},
           '100%': {opacity: 1}
+        },
+        displace: {
+          '0%':{transform: 'translate(100%)'},
+          '100%':{transform: 'translate(0px)'}
+        },
+        return:{
+          '0%':{transform: 'translate(0px)'},
+          '100%':{transform:'translate(100%)'}
         }
       },
       animation: {
-        'fade':'fade 3s linear 1'
+        fade:'fade 3s linear 1',
+        displace:'displace .5s ease-in-out',
+        return:'return .5s ease-in-out'
       },
       fontFamily: {
         palanquin: ['Palanquin', 'sans-serif'],

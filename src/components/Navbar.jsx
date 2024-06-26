@@ -4,7 +4,7 @@ import { navLinks, socialMedia } from '../constants'
 import { hamburger, northEast } from '../assets/icons'
 import Button from './Button'
 
-const Navbar = () => {
+const Navbar = ({openSideBar}) => {
   return (
     <header className='padding-x py-8 absolute z-10 w-full'>
         <nav className='flex justify-between items-center max-container'>
@@ -15,6 +15,7 @@ const Navbar = () => {
                     width={24}
                     height={24}
                     className='rounded-full hidden max-lg:flex'
+                    onClick={()=>openSideBar(true)}
                 />
                 {/* <a href="/" >
                     <img
