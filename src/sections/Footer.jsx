@@ -9,8 +9,7 @@ const Footer = () => {
       flex-wrap max-lg:flex-col">
         <div className="flex flex-col items-start">
           <a href="/">
-            <img src={headerLogo} alt="nike-logo"  width={300}
-            height={46}/>
+            <img src={headerLogo} alt="nike-logo" className="w-[300px] h-[300px] m-auto"/>
           </a>
         </div>
         <div className="flex flex-1 justify-between lg:gap-10 gap-20

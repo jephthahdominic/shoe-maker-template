@@ -14,14 +14,15 @@ const About = () => {
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit inventore voluptate praesentium natus eos consequuntur. 
         Asperiores quae facere ea ratione possimus animi in fugiat consequuntur aperiam? Sit debitis illum nihil.</p>
         <div className='flex items-center gap-4 mt-4'>
-          <p className='text-2xl'>Contact Us</p>
+          <p className='text-lg text-slate-gray'>Contact Us</p>
           <div className='flex gap-4'>
             {socialMedia.map((media)=>(
-              <a href="" className='border border-amber-900 rounded-full p-2 bg-white-400'>
+              <a href="" className='border border-slate-gray rounded-full p-2 bg-white-400'>
                 <img
                   src={media.imgURL}
                   alt={media.alt}
-                  width={24}
+                  width={20}
+                  height={20}
                 />
               </a>
             ))}

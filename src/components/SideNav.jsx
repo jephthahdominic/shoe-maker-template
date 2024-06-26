@@ -20,15 +20,15 @@ const SideNav = ({openSideBar, sideBarState}) => {
       <div className='flex flex-col gap-10 pl-7'>
         <ul className='w-full mt-7 flex flex-col gap-5 pt-3 pb-3'>
           {navLinks.map((link)=>(
-            <li key={link.label} className='flex justify-between items-center'>
-              <a href={link.href} className='font-montserrat text-black text-2xl font-semibold' onClick={()=>openSideBar(false)}>{link.label}</a>
+            <li key={link.label} className='flex justify-between items-center' onClick={()=>openSideBar(false)}>
+              <a href={link.url} className='font-montserrat text-black text-2xl font-semibold'>{link.label}</a>
             </li>
           ))}
         </ul>
         <div>
           <div className='flex gap-4'>
             {socialMedia.map((social)=>(
-              <a href={social.url} className='hover:cursor-pointer bg-white border rounded-full p-2 transition-all hover:bg-transparent hover:border-white'>
+              <a href={social.url} className='hover:cursor-pointer bg-white border border-slate-gray rounded-full p-2 transition-all hover:bg-transparent hover:border-white'>
                 <img src={social.imgURL} alt={social.alt} width={40} height={40}/>
               </a>
             ))}
