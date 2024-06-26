@@ -1,7 +1,6 @@
-import React from 'react'
-import { close, copyright } from '../assets/icons'
-import { navLinks, socialMedia } from '../constants'
-import Button from './Button'
+import React from 'react';
+import { close, copyright } from '../assets/icons';
+import { navLinks, socialMedia } from '../constants';
 
 const SideNav = ({openSideBar, sideBarState}) => {
   return (
@@ -21,10 +20,8 @@ const SideNav = ({openSideBar, sideBarState}) => {
       <div className='flex flex-col gap-10 pl-7'>
         <ul className='w-full mt-7 flex flex-col gap-5 pt-3 pb-3'>
           {navLinks.map((link)=>(
-            <li key={link.label} className='flex justify-between items-center'
-            onClick={()=>openSideBar(false)}
-            >
-              <a href={link.href} className='font-montserrat text-black text-2xl font-semibold'>{link.label}</a>
+            <li key={link.label} className='flex justify-between items-center'>
+              <a href={link.href} className='font-montserrat text-black text-2xl font-semibold' onClick={()=>openSideBar(false)}>{link.label}</a>
             </li>
           ))}
         </ul>
