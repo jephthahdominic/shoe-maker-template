@@ -9,7 +9,7 @@ const Products = () => {
     const [displayAll, setDIsplayAll] = useState(false)
   return (
     <section className='w-full max-container' id='products' data-aos="zoom-in" data-aos-duration = "500" data-aos-once = "false" data-aos-easing = "ease-in-out" data-aos-delay = "50">
-        <h2 className=' text-4xl max-sm:text-3xl font-montserrat text-tint'>We are passionate 
+        <h2 className=' text-4xl max-sm:text-4xl font-montserrat text-tint'>We are passionate 
         <span className='block sm:inline'> about<span className='text-amber-900'> quality</span></span></h2>
         <div className='w-full mt-2 text-slate-gray xl:flex justify-between align-top'>
             <p className='text-xl xl:w-[70%] font-roboto leading-normal'>A great brand is one that provides quality and a touch of confidence to its customers</p>
