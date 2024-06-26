@@ -7,7 +7,7 @@ const Services = () => {
     <section id='services' className='max-container flex flex-col gap-4' data-aos-once="false" data-aos="fade-right" data-aos-offset="100" data-aos-duration="500" data-aos-easing="ease-in-out" data-aos-delay="50">
       <h2 className='font-montserrat text-4xl max-sm:text-md max-xl:text-left text-bold text-white'>Our Core Values</h2>
       <p className='text-xl font-roboto text-white-400'>We are committed to adding value to the world</p>
-      <div className='flex items-center justify-center gap-9 flex-wrap'>
+      <div className='flex items-center justify-center gap-9 max-xl:flex-col flex-wrap'>
         {services.map((service)=>(
             <ServiceCard 
               icon = {service.imgURL}
