@@ -8,7 +8,7 @@ const Gallery = () => {
             <h2 className='font-montserrat text-4xl max-sm:text-md text-white text-bold'>Design for the <span className='max-sm:block inline'>Perfect Story</span></h2>
             <p className='text-lg text-white-400 font-montserrat leading-normal mt-2'>In a journey of uncertainties, great people don't quit</p>
         </div>
-        <div className='xl:text-center'>
+        <div className='xl:text-center w-[45%]'>
            <video
                 src={speech}
                 width={'100%'}

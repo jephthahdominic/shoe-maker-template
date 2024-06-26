@@ -9,7 +9,7 @@ const ShoeCard = ({imgURL, name, price, alt}) => {
         alt={alt}
         className='w-[200px] max-sm:w-[180px] h-[200px] max-sm:h-[180px] object-contain m-auto'
       />
-      <h1 className='leading-normal text-semibold font-montserrat text-lg mt-2'>{name}</h1>
+      <p className='leading-normal text-semibold font-roboto text-lg mt-2'>{name}</p>
       {/* <p className='font-roboto text-lg'>{price}</p> */}
     </div>
   )

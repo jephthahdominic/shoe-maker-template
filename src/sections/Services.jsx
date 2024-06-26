@@ -4,9 +4,9 @@ import ServiceCard from '../components/ServiceCard'
 
 const Services = () => {
   return (
-    <section id='services' className='max-container flex flex-col gap-4'>
-      <h2 className='font-montserrat text-center text-4xl max-sm:text-md max-xl:text-left text-white text-bold'>What we do</h2>
-      <p className='text-center max-xl:text-left text-xl text-white-400 font-montserrat '>We are committed to adding value to the world</p>
+    <section id='services' className='max-container flex flex-col gap-4' data-aos-once="false" data-aos="fade-right" data-aos-offset="100" data-aos-duration="500" data-aos-easing="ease-in-out" data-aos-delay="50">
+      <h2 className='font-montserrat text-4xl max-sm:text-md max-xl:text-left text-bold text-white'>Our Core Values</h2>
+      <p className='text-xl font-roboto text-white-400'>We are committed to adding value to the world</p>
       <div className='flex items-center justify-center gap-9 flex-wrap'>
         {services.map((service)=>(
             <ServiceCard 

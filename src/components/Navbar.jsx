@@ -1,6 +1,6 @@
 import React from 'react'
 import { headerLogo } from '../assets/images'
-import { navLinks } from '../constants'
+import { navLinks, socialMedia } from '../constants'
 import { hamburger, northEast } from '../assets/icons'
 import Button from './Button'
 
@@ -16,14 +16,15 @@ const Navbar = () => {
                     height={24}
                     className='rounded-full hidden max-lg:flex'
                 />
-                <a href="/" >
+                {/* <a href="/" >
                     <img
                         src={headerLogo}
                         alt='logo'
-                        width={130}
+                        width={50}
                         height={29}
                     />
-                </a>
+                </a> */}
+                <h1 className='text-white font-bold text-3xl font-poppins leading-normal tracking-widest'>Ellech</h1>
             </div>
             <ul className='flex flex-1 justify-center gap-8 align-center max-lg:hidden'> 
                 {navLinks.map((link)=>(
@@ -32,14 +33,13 @@ const Navbar = () => {
                     </li>
                 ))}
             </ul>
-            <div className='max-lg:hidden'>
-                <Button
-                    label="Let's talk"
-                    icon={northEast}
-                    backgroundColor='bg-amber-900'
-                    color='text-white-400'
-                    borderColor='border-amber-900'
-                />
+            <div className='max-lg:hidden flex gap-4'>
+                {socialMedia.map((social)=>(
+                    <a href={social.url} className='hover:cursor-pointer bg-white border rounded-full p-2 transition-all hover:bg-transparent hover:border-white'>
+                        <img src={social.imgURL} alt={social.alt} width={24} height={24}/>
+                    </a>
+                    
+                ))}
             </div>
             
         </nav>

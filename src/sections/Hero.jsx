@@ -11,7 +11,7 @@ const Hero = ({...props}) => {
   return (
     <section className='w-full max-container flex items-center xl:flex-row flex-col
     min-h-screen gap-10'>
-        <div className='flex-col gap-4 w-full max-container padding-r padding-t max-xl:padding-x'>
+        {/* <div className='flex-col gap-4 w-full max-container padding-r padding-t max-xl:padding-x'>
             <h1 className='font-montserrat text-[62px]  max-sm:text-[72px] max-sm:leading-[82px] text-bold text-white-400'>
                 A <span className='text-amber-900'> Perfect Shoe </span> 
                 <br/>
@@ -29,8 +29,8 @@ const Hero = ({...props}) => {
                     borderOnHover='hover:border-white-400'
                 />
             </div>
-        </div>
-        <div className='relative max-container flex xl:min-h-screen items-end w-full pt-2 px-2'>
+        </div> */}
+        {/* <div className='relative max-container flex xl:min-h-screen items-end w-full pt-2 px-2'>
             <img
                 src={bigClassicMan}
                 alt='Classic man on shoes'
@@ -51,7 +51,7 @@ const Hero = ({...props}) => {
                     </div>
                 ))}
             </div>
-        </div>
+        </div> */}
         
         
     </section>

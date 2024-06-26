@@ -1,11 +1,11 @@
-import {shoe5, shoe6, shoe7, customer1, customer2, manOnShoes1, manOnShoes2, manOnShoes3, sandals1, sandals2, sandals3, shoe1, shoe2, shoe3, shoe4} from '../assets/images/index'
+import {shoe5, shoe6, shoe7, customer1, customer2, manOnShoes1, manOnShoes2, manOnShoes3, sandals1, sandals2, sandals3, shoe1, shoe2, shoe3, shoe4, standAloneShoe1, standAloneShoes2, standAloneShoes3} from '../assets/images/index'
 import { facebook, instagram, shieldTick, support, truckFast, twitter } from '../assets/icons/index';
 
 export const navLinks = [
     {"url":"/", "label":"Home"},
     {"url":"#about", "label":"About Us"},
     {"url":"#products", "label":"Products"},
-    {"url":"#contact", "label":"Contact us"}
+    {"url":"#services", "label":"Our values"}
 ];
 
 export const shoes = [
@@ -106,18 +106,23 @@ export const classicMen = [
 
 export const services = [
     {
-        imgURL: truckFast,
-        label: "Free shipping",
+        imgURL: standAloneShoe1,
+        label: "Class",
         subtext: "Enjoy seamless shopping with our complimentary shipping service."
     },
     {
-        imgURL: shieldTick,
-        label: "Secure Payment",
+        imgURL: standAloneShoes2,
+        label: "Quality",
         subtext: "Experience worry-free transactions with our secure payment options."
     },
     {
-        imgURL: support,
-        label: "Love to help you",
+        imgURL: standAloneShoes3,
+        label: "Durability",
+        subtext: "Our dedicated team is here to assist you every step of the way."
+    },
+    {
+        imgURL: standAloneShoes2,
+        label: "Customer value",
         subtext: "Our dedicated team is here to assist you every step of the way."
     },
 ];
@@ -168,12 +173,8 @@ export const footerLinks = [
     {
         title: "Products",
         links: [
-            { name: "Air Force 1", link: "/" },
-            { name: "Air Max 1", link: "/" },
-            { name: "Air Jordan 1", link: "/" },
-            { name: "Air Force 2", link: "/" },
-            { name: "Nike Waffle Racer", link: "/" },
-            { name: "Nike Cortez", link: "/" },
+            { name: "Coporate Shoes", link: "/" },
+            { name: "Men's Sandals", link: "/" },
         ],
     },
     {
@@ -190,7 +191,10 @@ export const footerLinks = [
         title: "Get in touch",
         links: [
             { name: "customer@nike.com", link: "mailto:customer@nike.com" },
-            { name: "+92554862354", link: "tel:+92554862354" },
+            { name: "Facebook", link: "" },
+            { name: "Instagram", link: "" },
+            { name: "Twitter", link: "" },
+            { name: "+2349129259960", link: "tel:+2349129259960" },
         ],
     },
 ];

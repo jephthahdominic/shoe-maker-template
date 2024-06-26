@@ -42,6 +42,9 @@ export default {
         "white-400": "rgba(255, 255, 255, 0.80)",
         "darkTransparent":"rgba(100, 100, 100, 0.5)"
       },
+      backgroundImage: {
+        'hero': "url('assets/images/Ellech_bg.png')",
+      },
     },
   },
   plugins: [],
