@@ -17,7 +17,7 @@ const SideNav = ({openSideBar, sideBarState}) => {
           />
         </button>
       </div>
-      <div className='flex flex-col gap-10 px-7'>
+      <div className='flex flex-col gap-8 px-7'>
         <ul className='w-full mt-7 flex flex-col gap-5 pt-3 pb-3'>
           {navLinks.map((link)=>(
             <li key={link.label} className='w-full p-2 flex justify-between items-center hover:bg-slate-400' onClick={()=>openSideBar(false)}>
