@@ -107,23 +107,23 @@ export const classicMen = [
 export const services = [
     {
         imgURL: standAloneShoe1,
-        label: "Class",
-        subtext: "Enjoy seamless shopping with our complimentary shipping service."
+        label: "Unwavering Quality",
+        subtext: "We prioritize premium materials and meticulous construction to ensure your Ellech shoes become trusted companions for years to come."
     },
     {
         imgURL: standAloneShoes2,
-        label: "Quality",
-        subtext: "Experience worry-free transactions with our secure payment options."
+        label: "Effortless Class",
+        subtext: "Our designs exude sophistication without sacrificing comfort. Every Ellech pair elevates your look, from everyday errands to special occasions."
     },
     {
         imgURL: standAloneShoes3,
-        label: "Durability",
-        subtext: "Our dedicated team is here to assist you every step of the way."
+        label: "Built to Endure",
+        subtext: "We don't compromise on durability. Ellech shoes are made to withstand the test of time, becoming a staple in your wardrobe."
     },
     {
         imgURL: standAloneShoes2,
-        label: "Customer value",
-        subtext: "Our dedicated team is here to assist you every step of the way."
+        label: "Customer Value at Heart",
+        subtext: "We understand the importance of getting what you pay for. Ellech offers exceptional quality at a fair price, ensuring you look your best without breaking the bank."
     },
 ];
 
