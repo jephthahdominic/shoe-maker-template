@@ -20,7 +20,7 @@ const SideNav = ({openSideBar, sideBarState}) => {
       <div className='flex flex-col gap-10 pl-7'>
         <ul className='w-full mt-7 flex flex-col gap-5 pt-3 pb-3'>
           {navLinks.map((link)=>(
-            <li key={link.label} className='w-full p-2 flex justify-between items-center hover:bg-white-400' onClick={()=>openSideBar(false)}>
+            <li key={link.label} className='w-full p-2 flex justify-between items-center hover:bg-slate-400' onClick={()=>openSideBar(false)}>
               <a href={link.url} className='font-montserrat text-black text-xl font-semibold'>{link.label}</a>
             </li>
           ))}
