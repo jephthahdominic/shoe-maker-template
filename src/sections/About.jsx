@@ -8,7 +8,9 @@ const About = () => {
   return (
     <section id='about' className='w-full max-container flex gap-10 justify-beween items-center max-xl:flex-col'>
       <div className='flex flex-col' data-aos="zoom-in" data-aos-duration = "500" data-aos-once = "false" data-aos-easing = "ease-in-out">
-        <h2 className='text-4xl max-sm:text-md font-montserrat text-bold'>About Ellech<span className='text-amber-900'> Footwears</span></h2>
+       {/* <h2 className='text-4xl max-sm:text-md font-montserrat text-bold'>About Ellech<span className='text-amber-900'> Footwears</span></h2>*/}
+
+<h2 className='text-4xl max-sm:text-md font-montserrat text-bold'>Ellech: Where Quality Meets Value<span className='text-amber-900'></span></h2>
         <p className='mt-2 info-text font-roboto'>Ellech isn't just footwear, it's a statement. We believe in crafting shoes that are timeless in design, built to last, and offered at a price that respects your wallet.</p>
         <div className='flex items-center gap-4 mt-4'>
           <p className='text-lg text-slate-gray'>Contact Us</p>
