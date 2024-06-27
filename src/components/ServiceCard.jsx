@@ -10,8 +10,8 @@ const ServiceCard = ({icon, service, subText}) => {
                 alt={service}
                 className='w-[150px] h-[150px] bg-white rounded-full m-auto object-contain'
             />
-            <p className='mt-2 text-xl max-xl:text-md text-white-400 leading-normal font-montserrat'>{service}</p>
-<p>{subText}</p>
+            <p className='mt-2 text-xl max-xl:text-md text-white leading-normal font-montserrat'>{service}</p>
+<p class name="text-white-400 max-xl:text-sm info-text font-roboto">{subText}</p>
         </div>
     </div>  
   )
