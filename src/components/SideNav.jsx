@@ -12,8 +12,8 @@ const SideNav = ({openSideBar, sideBarState}) => {
         >
           <img
             src={close}
-            height={40}
-            width={40}
+            height={30}
+            width={30}
           />
         </button>
       </div>
