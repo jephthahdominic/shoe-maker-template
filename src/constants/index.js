@@ -190,10 +190,10 @@ export const footerLinks = [
     {
         title: "Get in touch",
         links: [
-            { name: "exquisite@ellech.com", link: "mailto:customer@nike.com" },
             { name: "Facebook", link: "" },
             { name: "Instagram", link: "" },
             { name: "Twitter", link: "" },
+            { name: "exquisite@ellech.com", link: "mailto:customer@nike.com" },
             { name: "+2348021682190", link: "tel:+2349129259960" },
         ],
     },
