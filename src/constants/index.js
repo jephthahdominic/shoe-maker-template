@@ -193,8 +193,8 @@ export const footerLinks = [
             { name: "Facebook", link: "" },
             { name: "Instagram", link: "" },
             { name: "Twitter", link: "" },
-            { name: "exquisite@ellech.com", link: "mailto:customer@nike.com" },
-            { name: "+2348021682190", link: "tel:+2349129259960" },
+            { name: "ellech218@gmail.com", link: "mailto:ellech218@gmail.com" },
+            { name: "+2348021682190", link: "tel:+2348021682190" },
         ],
     },
 ];
