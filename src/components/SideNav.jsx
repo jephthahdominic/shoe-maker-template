@@ -18,13 +18,11 @@ const SideNav = ({openSideBar, sideBarState}) => {
         </button>
       </div>
       <div className='flex flex-col gap-10 pl-7'>
-        <ul className='w-full mt-7 flex flex-col gap-5 pt-3 pb-3'>
+        <div className='w-full mt-7 flex flex-col gap-5 pt-3 pb-3'>
           {navLinks.map((link)=>(
-            <li key={link.label} className='flex justify-between items-center' onClick={()=>openSideBar(false)}>
-              <a href={link.url} className='font-montserrat text-black text-2xl font-semibold'>{link.label}</a>
-            </li>
+            <a href={link.url} className='font-montserrat text-black text-2xl font-semibold' onClick={()=>openSideBar(false)}>{link.label}</a>
           ))}
-        </ul>
+        </div>
         <div>
           <div className='flex gap-4'>
             {socialMedia.map((social)=>(
