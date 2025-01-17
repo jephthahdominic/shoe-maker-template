@@ -12,8 +12,8 @@ const SideNav = ({openSideBar, sideBarState}) => {
         >
           <img
             src={close}
-            height={40}
-            width={40}
+            height={30}
+            width={30}
           />
         </button>
       </div>
@@ -27,7 +27,7 @@ const SideNav = ({openSideBar, sideBarState}) => {
           <div className='flex gap-4'>
             {socialMedia.map((social)=>(
               <a href={social.url} className='hover:cursor-pointer bg-white border border-slate-gray rounded-full p-2 transition-all hover:bg-transparent hover:border-white'>
-                <img src={social.imgURL} alt={social.alt} width={40} height={40}/>
+                <img src={social.imgURL} alt={social.alt} width={24} height={24}/>
               </a>
             ))}
           </div>

@@ -107,23 +107,23 @@ export const classicMen = [
 export const services = [
     {
         imgURL: standAloneShoe1,
-        label: "Class",
-        subtext: "Enjoy seamless shopping with our complimentary shipping service."
+        label: "Unwavering Quality",
+        subtext: "We prioritize premium materials and meticulous construction to ensure your Ellech shoes become trusted companions for years to come."
     },
     {
         imgURL: standAloneShoes2,
-        label: "Quality",
-        subtext: "Experience worry-free transactions with our secure payment options."
+        label: "Effortless Class",
+        subtext: "Our designs exude sophistication without sacrificing comfort. Every Ellech pair elevates your look, from everyday errands to special occasions."
     },
     {
         imgURL: standAloneShoes3,
-        label: "Durability",
-        subtext: "Our dedicated team is here to assist you every step of the way."
+        label: "Built to Endure",
+        subtext: "We don't compromise on durability. Ellech shoes are made to withstand the test of time, becoming a staple in your wardrobe."
     },
     {
         imgURL: standAloneShoes2,
-        label: "Customer value",
-        subtext: "Our dedicated team is here to assist you every step of the way."
+        label: "Customer Value at Heart",
+        subtext: "We understand the importance of getting what you pay for. Ellech offers exceptional quality at a fair price, ensuring you look your best without breaking the bank."
     },
 ];
 
@@ -190,11 +190,11 @@ export const footerLinks = [
     {
         title: "Get in touch",
         links: [
-            { name: "customer@nike.com", link: "mailto:customer@nike.com" },
             { name: "Facebook", link: "" },
             { name: "Instagram", link: "" },
             { name: "Twitter", link: "" },
-            { name: "+2349129259960", link: "tel:+2349129259960" },
+            { name: "ellech218@gmail.com", link: "mailto:ellech218@gmail.com" },
+            { name: "+2348021682190", link: "tel:+2348021682190" },
         ],
     },
 ];
