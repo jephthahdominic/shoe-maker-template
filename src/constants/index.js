@@ -2,10 +2,9 @@ import {shoe5, shoe6, shoe7, customer1, customer2, manOnShoes1, manOnShoes2, man
 import { facebook, instagram, shieldTick, support, truckFast, twitter } from '../assets/icons/index';
 
 export const navLinks = [
-    {"url":"/", "label":"Home"},
-    {"url":"#about", "label":"About Us"},
-    {"url":"#products", "label":"Products"},
-    {"url":"#services", "label":"Our values"}
+    {"url":"#about", "label":"About us"},
+    {"url":"#services", "label":"Our values"},
+    {"url":"#products", "label":"Products"}
 ];
 
 export const shoes = [
@@ -118,12 +117,12 @@ export const services = [
     {
         imgURL: standAloneShoes3,
         label: "Built to Endure",
-        subtext: "We don't compromise on durability. Ellech shoes are made to withstand the test of time, becoming a staple in your wardrobe."
+        subtext: "Ellech shoes are made to withstand the test of time, becoming a staple in your wardrobe."
     },
     {
         imgURL: standAloneShoes2,
-        label: "Customer Value at Heart",
-        subtext: "We understand the importance of getting what you pay for. Ellech offers exceptional quality at a fair price, ensuring you look your best without breaking the bank."
+        label: "Customer Value",
+        subtext: "Ellech offers exceptional quality at a fair price, ensuring you look your best without breaking the bank."
     },
 ];
 

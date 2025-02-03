@@ -37,10 +37,9 @@ export default {
         return:'return .5s ease-in-out'
       },
       fontFamily: {
-        palanquin: ['Palanquin', 'sans-serif'],
         montserrat: ['Montserrat', 'sans-serif'],
         poppins: ['Poppins', 'sans-serif'],
-        roboto: ['Roboto', 'sans-serif']
+        playfair: ['Playfair', 'sans-serif']
       },
       colors: {
         'primary': "#ECEEFF",
@@ -50,7 +49,7 @@ export default {
         "tint": "#101010",
         "tesla-red":"#E82127",
         "white-400": "rgba(255, 255, 255, 0.80)",
-        "darkTransparent":"rgba(100, 100, 100, 0.5)"
+        "darkTransparent":"rgba(0, 0, 0, 0.6)"
       },
       backgroundImage: {
         'hero': "url('assets/images/Ellech_bg.png')",
