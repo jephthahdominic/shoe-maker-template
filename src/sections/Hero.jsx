@@ -10,7 +10,7 @@ const Hero = ({...props}) => {
     const [animate, setAnimate] = useState(false);
   return (
     <section className='w-full max-container flex items-center xl:flex-row flex-col
-    min-h-screen gap-10'>        
+     gap-10'>        
     </section>
   )
 }

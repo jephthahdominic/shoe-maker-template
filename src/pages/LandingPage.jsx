@@ -22,7 +22,7 @@ function LandingPage() {
             sideBarState = {sideBarState}
           />
         </div>
-        <section className="xl:padding-l wide:padding-r max-xl:pb-2 bg-tint bg-hero bg-no-repeat bg-cover bg-center padding-b padding-t">
+        <section className="h-[50vh] xl:h-screen xl:padding-l wide:padding-r max-xl:pb-2 bg-tint bg-hero bg-no-repeat bg-cover bg-center padding-b padding-t">
           <Hero/>
         </section>
         <section className="padding">
