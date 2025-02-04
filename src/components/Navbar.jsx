@@ -20,7 +20,7 @@ const Navbar = ({openSideBar}) => {
                         className='text-white text-3xl hidden max-lg:flex'
                         onClick={()=>openSideBar(true)}
                     />
-                    <h1 className='text-white font-bold text-3xl font-poppins leading-normal tracking-widest'>Ellech</h1>
+                    <h1 className='text-white font-bold text-3xl font-playfair leading-normal tracking-widest'>Ellech</h1>
                 </div>
                 <div className='lg:hidden'>
                     <LinkToLogin>Sign In</LinkToLogin>
