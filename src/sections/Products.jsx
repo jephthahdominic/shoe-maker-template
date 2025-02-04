@@ -8,7 +8,7 @@ const Products = () => {
     const[currentCategory, setCurrentCategory] = useState("Men's shoes");
     const [displayAll, setDIsplayAll] = useState(false)
   return (
-    <section className='w-full max-container' id='products' data-aos="zoom-in" data-aos-duration = "500" data-aos-once = "false" data-aos-easing = "ease-in-out" data-aos-delay = "50">
+    <section className='w-full max-container' id='products'>
         <h2 className='title-text'><span className='text-black text-[48px]'>We are </span>passionate 
         <span className='block sm:inline'> about<span className='text-amber-900'> quality</span></span></h2>
     </section>

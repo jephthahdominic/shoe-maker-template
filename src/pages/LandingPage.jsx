@@ -22,16 +22,17 @@ function LandingPage() {
             sideBarState = {sideBarState}
           />
         </div>
-        <section className="h-[50vh] xl:h-screen xl:padding-l wide:padding-r max-xl:pb-2 bg-tint bg-hero bg-no-repeat bg-cover bg-center padding-b padding-t">
+        <section className="h-[50vh] xl:h-screen xl:padding-l wide:padding-r max-xl:pb-2 bg-tint bg-hero bg-no-repeat bg-cover bg-center padding-b padding-t"
+        data-aos="zoom-in" data-aos-duration = "700" data-aos-once = "true" data-aos-easing = "ease-in-out" data-aos-delay="50">
           <Hero/>
         </section>
-        <section className="padding">
+        <section className="padding" data-aos="zoom-in" data-aos-duration = "700" data-aos-once = "true" data-aos-easing = "ease-in-out" data-aos-delay="50">
           <About/>
         </section>
-        <section className="padding bg-amber-950">
+        <section className="padding bg-amber-950" data-aos="zoom-in" data-aos-duration = "700" data-aos-once = "true" data-aos-easing = "ease-in-out" data-aos-delay="50">
           <Services/>
         </section>
-        <section className="padding bg-white">
+        <section className="padding bg-white" data-aos="zoom-in" data-aos-duration = "700" data-aos-once = "true" data-aos-easing = "ease-in-out" data-aos-delay="50">
           <Products/>
         </section>
         <section className="bg-tint padding-x padding-t pb-8">
