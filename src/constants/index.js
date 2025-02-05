@@ -1,4 +1,4 @@
-import {shoe5, shoe6, shoe7, customer1, customer2, manOnShoes1, manOnShoes2, manOnShoes3, sandals1, sandals2, sandals3, shoe1, shoe2, shoe3, shoe4, standAloneShoe1, standAloneShoes2, standAloneShoes3} from '../assets/images/index'
+import {shoe5, shoe6, shoe7, customer1, customer2, manOnShoes1, manOnShoes2, manOnShoes3, sandals1, sandals2, sandals3, shoe1, shoe2, shoe3, shoe4, standAloneShoes2, standAloneShoes3, standAloneShoes1} from '../assets/images/index'
 import { facebook, instagram, shieldTick, support, truckFast, twitter } from '../assets/icons/index';
 
 export const navLinks = [
@@ -6,6 +6,24 @@ export const navLinks = [
     {"url":"#services", "label":"Our values"},
     {"url":"#products", "label":"Products"}
 ];
+
+export const heroShoes = [
+    {
+        id: "eh1",
+        src: standAloneShoes1,
+        alt: "first shoe"
+    },
+    {
+        id: "eh2",
+        src: standAloneShoes2,
+        alt: "second shoe"
+    },
+    {
+        id: "eh3",
+        src: standAloneShoes3,
+        alt: "third shoe"
+    },
+]
 
 export const shoes = [
     {
@@ -105,7 +123,7 @@ export const classicMen = [
 
 export const services = [
     {
-        imgURL: standAloneShoe1,
+        imgURL: standAloneShoes1,
         label: "Unwavering Quality",
         subtext: "We prioritize premium materials and meticulous construction to ensure your Ellech shoes become trusted companions for years to come."
     },
@@ -197,3 +215,18 @@ export const footerLinks = [
         ],
     },
 ];
+
+export const products = [
+    {
+        name: "Leather Chelsea Boots",
+        img: shoe7,
+        category: "men's corporate shoes",
+        price: 40000
+    },
+    {
+        name: "Leather Chelsea Boots",
+        img: shoe7,
+        category: "men's corporate shoes",
+        price: 40000
+    }
+]

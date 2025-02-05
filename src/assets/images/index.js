@@ -1,4 +1,4 @@
-import standAloneShoe1 from './standaloneShoe1.png';
+import standAloneShoes1 from './standaloneShoe1.png';
 import standAloneShoes2 from './standaloneShoes2.png'
 import standAloneShoes3 from './standaloneShoes3.png'
 import collectionBg from './collection-background.svg';
@@ -23,9 +23,10 @@ import sandals2 from './Sandals2.png';
 import sandals3 from './Sandals3.png';
 import elechBg from './Ellech_bg.png';
 import elech from './Elech.jpg'
+import heroShoe from './Leather-Shoes-PNG-Photo.png'
 
 export {
-    standAloneShoe1,
+    standAloneShoes1,
     standAloneShoes2,
     standAloneShoes3,
     collectionBg,
@@ -49,5 +50,6 @@ export {
     sandals2,
     sandals3,
     elechBg,
-    elech
+    elech,
+    heroShoe
 }
