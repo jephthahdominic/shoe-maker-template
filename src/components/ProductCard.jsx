@@ -5,9 +5,9 @@ export default function ProductCard({shoe}) {
         <img src={shoe.images[0].img} alt={shoe.images[0].alt} className="w-full"/>
       </div>
       <div className="pl-2 py-1">
-        <h1 className="text-[26px] font-playfair font-medium text-[#000] leading-tight mt-2">{shoe.productName}</h1>
+        <h1 className="text-[24px] font-playfair font-medium text-[#000] leading-tight mt-2">{shoe.productName}</h1>
         <p className="text-lg text-[#707072] mt-2">{shoe.category}</p>
-        <span className="text-[1.375rem] font-sans block mt-4">{shoe.price}</span>
+        <span className="text-[1.375rem] font-sans block mt-5">{shoe.price}</span>
       </div>
     </div>
   )
