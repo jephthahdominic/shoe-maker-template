@@ -1,16 +1,14 @@
 import React from 'react'
 import {Routes, Route, BrowserRouter} from 'react-router-dom'
-import Homepage from './pages/Homepage'
-import { SideBarProvider } from './contexts/SideBarContext'
+import LandingPage from './pages/LandingPage'
+import Home from './pages/Home'
 
 export default function App() {
   return (
-    <SideBarProvider>
       <BrowserRouter>
         <Routes>
-          <Route index element={<Homepage />}/>
+          <Route index element={<Home />}/>
         </Routes>
       </BrowserRouter>
-    </SideBarProvider>
   )
 }

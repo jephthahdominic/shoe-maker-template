@@ -1,20 +1,14 @@
-import React from 'react'
-import ProductImg from './ProductImg'
-import { FaNairaSign } from 'react-icons/fa6'
-import { Link } from 'react-router-dom'
-
-export default function ProductCard({product}) {
-    const {name, img, category, price} = product
+export default function ProductCard({shoe}) {
   return (
-    <Link to='/'>
-        <div className='bg-[#F7F7F7] p-4 rounded-t-[5px]'>
-            <ProductImg src={img}/>
-        </div>
-        <div className='px-2 py-4 font-playfair'>
-            <h3 className='text-xl font-semibold'>{name}</h3>
-            <p className='text-[#707072]'>{category}</p>
-            <p className='flex items-center gap-1 text-2xl text-amber-900'><FaNairaSign className='text-sm'/>{price}</p>
-        </div>
-    </Link>
+    <div className="w-72 border border-[1px solid #E5E7EB] rounded-t-[10px]">
+      <div className="w-72 bg-[rgba(217,217,217,0.5)] rounded-t-[10px]">
+        <img src={shoe.images[0].img} alt={shoe.images[0].alt} className="w-full"/>
+      </div>
+      <div className="pl-2">
+        <h1 className="text-[26px] font-playfair font-medium text-[#000] leading-tight mt-2">{shoe.productName}</h1>
+        <p className="text-lg text-[#707072] mt-2">{shoe.category}</p>
+        <span className="text-[1.375rem] font-sans block mt-4">{shoe.price}</span>
+      </div>
+    </div>
   )
 }
