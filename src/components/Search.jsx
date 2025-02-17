@@ -2,7 +2,7 @@ import { FiSearch } from "react-icons/fi";
 
 export default function Search() {
   return (
-    <div className="relative text-[#6B7280] px-2">
+    <div className="relative text-[#6B7280] px-2 my-4">
         <input 
             type="search" 
             placeholder="Search for shoes and sandals" 
