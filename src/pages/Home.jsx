@@ -19,9 +19,9 @@ export default function Home() {
             <Banner>
                 <BannerImage src={elech} alt={'banner'}/>
             </Banner>
-            <section className='mt-8 px-2'>
+            <section className='mt-10 px-2'>
                 <h2 className='font-playfair text-[26px] font-bold'>Top Orders</h2>
-                <div className='w-full flex items-center gap-4 mt-4 overflow-x-scroll py-1'>
+                <div className='w-full flex items-center gap-4 mt-3 overflow-x-scroll'>
                     {
                         shoes.map((shoe, key)=>(
                             <ProductCard key={key} shoe={shoe}/>
