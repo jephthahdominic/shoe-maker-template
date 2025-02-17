@@ -8,6 +8,7 @@ import Banner from '../components/Banner'
 import { elech } from '../assets/images'
 import shoes from '../data/data'
 import ProductCard from '../components/ProductCard'
+import { Link } from 'react-router-dom'
 
 export default function Home() {
   return (
@@ -21,6 +22,19 @@ export default function Home() {
             </Banner>
             <section className='mt-10 px-2'>
                 <h2 className='font-playfair text-[26px] font-bold'>Top Orders</h2>
+                <div className='w-full flex items-center gap-4 mt-3 overflow-x-scroll'>
+                    {
+                        shoes.map((shoe, key)=>(
+                            <ProductCard key={key} shoe={shoe}/>
+                        ))
+                    }
+                </div>
+            </section>
+            <section className='mt-12 px-2'>
+                <div className='flex justify-between items-center'>
+                    <h2 className='font-playfair text-[26px] font-bold'>Coporate shoes</h2>
+                    <Link className='text-[22px]'>More</Link>
+                </div>
                 <div className='w-full flex items-center gap-4 mt-3 overflow-x-scroll'>
                     {
                         shoes.map((shoe, key)=>(
