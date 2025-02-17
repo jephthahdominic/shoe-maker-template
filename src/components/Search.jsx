@@ -6,9 +6,9 @@ export default function Search() {
         <input 
             type="search" 
             placeholder="Search for shoes and sandals" 
-            className="w-full py-3 rounded-[50px] border border-[1px solid E5E7EB] pl-12 pr-4"
+            className="w-full py-3 rounded-[50px] border border-[1px solid E5E7EB] pl-10 pr-4 focus:border-[#E4AC07] outline-none"
         />
-        <FiSearch className="absolute top-3 left-4 text-2xl"/>
+        <FiSearch className="absolute top-3 left-6 text-2xl"/>
     </div>
   )
 }
