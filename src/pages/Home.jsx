@@ -20,7 +20,7 @@ export default function Home() {
             <Banner>
                 <BannerImage src={elech} alt={'banner'}/>
             </Banner>
-            <section className='mt-10 px-2'>
+            <section className='mt-10'>
                 <h2 className='font-playfair text-[26px] font-bold'>Top Orders</h2>
                 <div className='w-full flex items-center gap-4 mt-3 overflow-x-scroll'>
                     {
@@ -30,7 +30,20 @@ export default function Home() {
                     }
                 </div>
             </section>
-            <section className='mt-12 px-2'>
+            <section className='mt-14'>
+                <div className='flex justify-between items-center'>
+                    <h2 className='font-playfair text-[26px] font-bold'>Coporate shoes</h2>
+                    <Link className='text-[22px]'>More</Link>
+                </div>
+                <div className='w-full flex items-center gap-4 mt-3 overflow-x-scroll'>
+                    {
+                        shoes.map((shoe, key)=>(
+                            <ProductCard key={key} shoe={shoe}/>
+                        ))
+                    }
+                </div>
+            </section>
+            <section className='mt-14'>
                 <div className='flex justify-between items-center'>
                     <h2 className='font-playfair text-[26px] font-bold'>Coporate shoes</h2>
                     <Link className='text-[22px]'>More</Link>
