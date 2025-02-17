@@ -22,7 +22,7 @@ export default function Home() {
             </Banner>
             <section className='mt-10'>
                 <h2 className='font-playfair text-[26px] font-bold'>Top Orders</h2>
-                <div className='w-full flex items-center gap-4 mt-3 overflow-x-scroll'>
+                <div className='w-full flex items-center gap-4 mt-3 overflow-auto'>
                     {
                         shoes.map((shoe, key)=>(
                             <ProductCard key={key} shoe={shoe}/>
@@ -35,7 +35,7 @@ export default function Home() {
                     <h2 className='font-playfair text-[26px] font-bold'>Coporate shoes</h2>
                     <Link className='text-[22px]'>More</Link>
                 </div>
-                <div className='w-full flex items-center gap-4 mt-3 overflow-x-scroll'>
+                <div className='w-full flex items-center gap-4 mt-3 overflow-auto'>
                     {
                         shoes.map((shoe, key)=>(
                             <ProductCard key={key} shoe={shoe}/>
@@ -48,7 +48,7 @@ export default function Home() {
                     <h2 className='font-playfair text-[26px] font-bold'>Coporate shoes</h2>
                     <Link className='text-[22px]'>More</Link>
                 </div>
-                <div className='w-full flex items-center gap-4 mt-3 overflow-x-scroll'>
+                <div className='w-full flex items-center gap-4 mt-3 overflow-auto'>
                     {
                         shoes.map((shoe, key)=>(
                             <ProductCard key={key} shoe={shoe}/>
