@@ -4,9 +4,10 @@ import { IoClose } from 'react-icons/io5'
 import { Link } from 'react-router-dom'
 
 export default function SideBar() {
+    
   return (
-    <div className='w-full h-screen absolute top-0 bg-[rgba(0,0,0,0.37)] hidden'>
-        <nav className='bg-white h-full w-full'>
+    <div className='w-full h-screen flex justify-end absolute z-40 top-0 bg-[rgba(0,0,0,0.37)]'>
+        <nav className='bg-white h-full w-[80%] -mr-[300px]'>
             <header className='px-4 py-4 w-full relative border-b-[3px] border-b-[3px solid E5E7EB]'>
                 <IoClose className='text-[28px] absolute right-4'/>
                 <div className='mt-8'>

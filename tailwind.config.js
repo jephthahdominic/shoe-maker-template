@@ -42,7 +42,7 @@ export default {
         playfair: ['Playfair', 'sans-serif']
       },
       colors: {
-        'primary': "#ECEEFF",
+        'primary': "#E4AC07",
         "coral-red": "#FF6452",
         "slate-gray": "#6D6D6D",
         "pale-blue": "#F5F6FF",
@@ -50,7 +50,9 @@ export default {
         "tesla-red":"#E82127",
         "white-400": "rgba(255, 255, 255, 0.80)",
         "darkTransparent":"rgba(0, 0, 0, 0.6)",
-        "announcementGreen": "rgb(2, 81, 40)"
+        "announcementGreen": "rgb(2, 81, 40)",
+        "light-gray":"#E5E7EB",
+        "dark-gray": "#6B7280"
       },
       backgroundImage: {
         'hero': "url('assets/images/Ellech_bg.png')",
