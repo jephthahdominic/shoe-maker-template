@@ -19,8 +19,8 @@ export default {
     extend: {
       keyframes:{
         fade: {
-          '0%': {opacity: 0},
-          '100%': {opacity: 1}
+          '0%': {backgroundColor: 'rgba(0,0,0,0)'},
+          '100%': {backgroundColor: 'rgba(0,0,0,0.37)'}
         },
         displace: {
           '0%':{transform: 'translate(100%)'},
@@ -29,12 +29,22 @@ export default {
         return:{
           '0%':{transform: 'translate(0px)'},
           '100%':{transform:'translate(100%)'}
+        },
+        appearRTL:{
+          '0%': {marginRight: '-300px'},
+          '100%':{marginRight: '0px'}
+        },
+        appearLTR:{
+          '0%': {marginLeft: '-300px'},
+          '100%':{marginLeft: '0px'}
         }
       },
       animation: {
-        fade:'fade 3s linear 1',
+        fade:'fade .5s linear 1',
         displace:'displace .5s ease-in-out',
-        return:'return .5s ease-in-out'
+        return:'return .5s ease-in-out',
+        appearRTL: 'appearRTL .4s linear',
+        appearLTR: 'appearLTR .4s linear'
       },
       fontFamily: {
         montserrat: ['Montserrat', 'sans-serif'],
