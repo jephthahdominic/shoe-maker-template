@@ -1,4 +1,4 @@
-import { createContext, useReducer } from "react";
+import { createContext, useContext, useReducer } from "react";
 
 const initialState = {
     isActive: false,
@@ -8,7 +8,8 @@ const initialState = {
 
 function reducer(state, action){
     switch(action.type){
-        
+        case "openSearch":
+            return {...state, isActive:true}
     }
 }
 
@@ -22,3 +23,13 @@ function SearchBarProvider({children}){
         </SearchBarContext.Provider>
     )
 }
+
+function useSearch(){
+    const context = useContext(SearchBarContext);
+    if(!context){
+        console.log("you cannot use context outside its provider")
+    }
+    return context;
+}
+
+export {SearchBarProvider, useSearch}
