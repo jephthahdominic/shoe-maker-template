@@ -15,7 +15,7 @@ export default function Search() {
                     placeholder="Search for shoes and sandals" 
                     className="w-full py-2 rounded-[100px] border border-[1px solid E5E7EB] pl-10 pr-4 
                         border-2 outline-none bg-white focus:border-primary"
-                        autoFocus
+                    autoFocus
                     />
                     <FiSearch className="absolute top-3 left-3 text-[18px]"/>
                 </div>

@@ -1,6 +1,8 @@
 import { FiSearch } from "react-icons/fi";
+import { useSearch } from "../contexts/SearchBarContext";
 
 export default function SearchBar() {
+  const {dispatch} = useSearch()
   return (
     <div className="relative text-[#707072] my-4">
       <input 
@@ -9,6 +11,7 @@ export default function SearchBar() {
         className="w-full py-3 rounded-[100px] border border-[1px solid E5E7EB] pl-9 pr-4 
          border-2 outline-none bg-[#E5E7EB]"
          disabled
+         onClick={()=>dispatch({type:"openSearch"})}
       />
       <FiSearch className="absolute top-4 left-3 text-lg"/>
     </div>
