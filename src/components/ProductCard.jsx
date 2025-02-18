@@ -6,7 +6,7 @@ export default function ProductCard({shoe}) {
       </div>
       <div className="pl-2 py-1">
         <h1 className="text-[2rem] font-playfair font-medium text-[#000] leading-tight mt-2">{shoe.productName}</h1>
-        <p className="text-lg text-[#707072] mt-2">{shoe.category}</p>
+        <p className="text-[1rem] text-[#707072] mt-2">{shoe.category}</p>
         <span className="text-[1.375rem] font-sans block mt-5">{shoe.price}</span>
       </div>
     </div>
