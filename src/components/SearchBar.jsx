@@ -4,7 +4,7 @@ import { useSearch } from "../contexts/SearchBarContext";
 export default function SearchBar() {
   const {dispatch} = useSearch()
   return (
-    <div className="relative text-[#707072] my-4">
+    <div className="relative text-[#707072] my-5">
       <input 
         type="search" 
         placeholder="Search for shoes and sandals" 
