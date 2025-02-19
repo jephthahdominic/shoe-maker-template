@@ -10,6 +10,8 @@ function reducer(state, action){
     switch(action.type){
         case "openSearch":
             return {...state, isActive:true}
+        case "closeSearch":
+            return initialState
     }
 }
 

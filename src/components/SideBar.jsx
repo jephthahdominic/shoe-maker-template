@@ -8,11 +8,11 @@ export default function SideBar() {
     const {isSidebarOpen, setIsSidebarOpen} = useSidebar();
   return (
     <div className={`w-full h-screen flex justify-end fixed z-40 top-0 bg-[rgba(0,0,0,0.37)] ${!isSidebarOpen && 'hidden'} animate-fade`}>
-        <nav className='bg-white h-full w-[85%] animate-appearRTL'>
+        <nav className='fixed z-40 bg-white h-full w-[85%] animate-appearRTL'>
             <header className='px-4 py-4 w-full relative border-b-[3px] border-b-[3px solid E5E7EB]'>
                 <IoClose className='text-[28px] absolute right-4' onClick={()=>setIsSidebarOpen(s=>!s)}/>
-                <div className='mt-8'>
-                    <Link to='signin' className='flex items-center gap-2 font-poppins font-normal text-xl'>
+                <div className='mt-10'>
+                    <Link to='signin' className='inline-flex items-center gap-2 font-poppins font-normal text-xl'>
                         <FiUser className=' text-2xl'/> Sign in
                     </Link>
                 </div>
@@ -31,7 +31,8 @@ export default function SideBar() {
                     </li>
                 </ul>
             </div>
-        </nav>
+        </nav> 
+        <div className='fixed w-full h-full bg-inherit' onClick={()=>setIsSidebarOpen(s=>!s)}></div>
     </div>
   )
 }

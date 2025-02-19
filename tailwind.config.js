@@ -37,14 +37,19 @@ export default {
         appearLTR:{
           '0%': {marginLeft: '-300px'},
           '100%':{marginLeft: '0px'}
+        },
+        appearTTB:{
+          '0%': {marginTop: '-900px'},
+          '100%':{marginTop: '0px'}
         }
       },
       animation: {
         fade:'fade .5s linear 1',
         displace:'displace .5s ease-in-out',
         return:'return .5s ease-in-out',
-        appearRTL: 'appearRTL .4s linear',
-        appearLTR: 'appearLTR .4s linear'
+        appearRTL: 'appearRTL .3s linear',
+        appearLTR: 'appearLTR .4s linear',
+        appearTTB: 'appearTTB .3s linear'
       },
       fontFamily: {
         montserrat: ['Montserrat', 'sans-serif'],
