@@ -13,7 +13,7 @@ export default function SearchResults() {
 
   return (
     <section className='mt-6'>
-        <h2 className='text-[1.1235rem] text-dark-gray'>{state.SearchResults?.length}</h2>
+        <h2 className='text-[1.1235rem] text-dark-gray'>{state.searchResults?.length}</h2>
     </section>
   )
 }
