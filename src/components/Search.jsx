@@ -3,9 +3,16 @@ import { FiChevronLeft, FiSearch } from 'react-icons/fi'
 import { useSearch } from '../contexts/SearchBarContext'
 import SuggestedSearches from './SuggestedSearches'
 import SearchResults from './SearchResults'
+import { useProducts } from '../contexts/ProductContext'
 
 export default function Search() {
     const {state, dispatch} = useSearch();
+    const {shoes} = useProducts()
+    function search(){
+        const searchResult = shoes.filter((shoe)=>shoe.productName.toLowerCase().match(state.searchQuery.toLowerCase())!==null);
+        dispatch({type:"Search", payload:searchResult})
+    } 
+
   return (
     <div className={`w-full h-screen absolute z-40 top-0 bg-[rgba(0,0,0,0.37)]
     animate-fade ${state.isActive ? 'block':'hidden'}`}>
@@ -19,14 +26,13 @@ export default function Search() {
                         className="w-full py-2 rounded-[100px] border border-[1px solid E5E7EB] pl-10 pr-4 
                             border-2 outline-none bg-white focus:border-primary"
                         autoFocus
-                        onChange={(e)=>dispatch({type:"isSearching", payload:e.target.value})}
+                        onChange={(e)=>dispatch({type:"isTyping", payload:e.target.value})}
                         value={state.searchQuery}
                     />
-                    <FiSearch className="absolute top-3 left-3 text-[18px]"/>
+                    <button onClick={search}><FiSearch className="absolute top-3 left-3 text-[18px]"/></button>
                 </div>
             </div>  
-            <SuggestedSearches />
-            <SearchResults />
+            {state.searchResults ? <SearchResults /> : <SuggestedSearches />}
         </div>
     </div>
   )

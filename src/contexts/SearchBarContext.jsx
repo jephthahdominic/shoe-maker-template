@@ -13,10 +13,10 @@ function reducer(state, action){
             return {...state, isActive:true}
         case "closeSearch":
             return initialState
-        case "isSearching":
+        case "isTyping":
             console.log(action.payload);
             return {...state, searchQuery:action.payload};
-        case "resultReady":
+        case "Search":
             return {...state, searchResults:action.payload}
     }
 }
