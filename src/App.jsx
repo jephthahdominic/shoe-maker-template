@@ -4,17 +4,20 @@ import LandingPage from './pages/LandingPage'
 import Home from './pages/Home'
 import { SideBarProvider } from './contexts/SidebarContext'
 import { SearchBarProvider } from './contexts/SearchBarContext'
+import { ProductProvider } from './contexts/ProductContext'
 
 export default function App() {
   return (
     <SideBarProvider>
-      <SearchBarProvider>
-        <BrowserRouter>
-          <Routes>
-            <Route index element={<Home />}/>
-          </Routes>
-        </BrowserRouter>
-      </SearchBarProvider>
+      <ProductProvider>
+        <SearchBarProvider>
+          <BrowserRouter>
+            <Routes>
+              <Route index element={<Home />}/>
+            </Routes>
+          </BrowserRouter>
+        </SearchBarProvider>
+      </ProductProvider>
     </SideBarProvider>
   )
 }

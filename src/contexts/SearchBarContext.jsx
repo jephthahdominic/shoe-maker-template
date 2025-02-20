@@ -3,7 +3,8 @@ import { createContext, useContext, useReducer } from "react";
 const initialState = {
     isActive: false,
     status:null,
-    searchQuery: null,
+    searchQuery: '',
+    searchResults:null
 }
 
 function reducer(state, action){
@@ -12,6 +13,11 @@ function reducer(state, action){
             return {...state, isActive:true}
         case "closeSearch":
             return initialState
+        case "isSearching":
+            console.log(action.payload);
+            return {...state, searchQuery:action.payload};
+        case "resultReady":
+            return {...state, searchResults:action.payload}
     }
 }
 

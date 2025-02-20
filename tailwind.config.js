@@ -44,10 +44,10 @@ export default {
         }
       },
       animation: {
-        fade:'fade .5s linear 1',
+        fade:'fade .3s linear 1',
         displace:'displace .5s ease-in-out',
         return:'return .5s ease-in-out',
-        appearRTL: 'appearRTL .3s linear',
+        appearRTL: 'appearRTL .2s linear',
         appearLTR: 'appearLTR .4s linear',
         appearTTB: 'appearTTB .3s linear'
       },
