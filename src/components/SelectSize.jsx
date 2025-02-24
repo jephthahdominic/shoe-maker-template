@@ -12,9 +12,9 @@ export default function SelectSize() {
             <span className='text-[1.5rem] font-serif'>Select Size</span>
             <div className='border absolute right-0 bg-white'>
                 <div className='flex py-1 px-2 gap-20 items-center' onClick={()=>setSelectCountry(s=>!s)}>
-                    {countrySize} {selectCountry ? <FiChevronDown /> : <FiChevronUp/>}
+                    {countrySize} {!selectCountry ? <FiChevronDown /> : <FiChevronUp/> }
                 </div>
-                <div className= {`flex flex-col ${selectCountry && 'hidden'}`}>
+                <div className= {`flex-col ${!selectCountry ? 'hidden' : 'flex'}`}>
                     {
                         sizes.map((size, index)=>(
                             <div className='border-t py-1.5 px-2' onClick={()=>{
