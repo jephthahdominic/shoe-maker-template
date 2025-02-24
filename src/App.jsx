@@ -1,6 +1,5 @@
 import React from 'react'
-import {Routes, Route, BrowserRouter} from 'react-router-dom'
-import LandingPage from './pages/LandingPage'
+import {Routes, Route, BrowserRouter} from 'react-router-dom';
 import Home from './pages/Home'
 import { SideBarProvider } from './contexts/SidebarContext'
 import { SearchBarProvider } from './contexts/SearchBarContext'
