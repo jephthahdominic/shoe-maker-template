@@ -5,6 +5,7 @@ import Home from './pages/Home'
 import { SideBarProvider } from './contexts/SidebarContext'
 import { SearchBarProvider } from './contexts/SearchBarContext'
 import { ProductProvider } from './contexts/ProductContext'
+import ProductDescription from './pages/ProductDescription'
 
 export default function App() {
   return (
@@ -13,7 +14,8 @@ export default function App() {
         <SearchBarProvider>
           <BrowserRouter>
             <Routes>
-              <Route index element={<Home />}/>
+              <Route index path='/' element={<Home />}/>
+              <Route path=':id' element={<ProductDescription />}/>
             </Routes>
           </BrowserRouter>
         </SearchBarProvider>

@@ -52,9 +52,9 @@ export default {
         appearTTB: 'appearTTB .3s linear'
       },
       fontFamily: {
-        montserrat: ['Montserrat', 'sans-serif'],
-        poppins: ['Poppins', 'sans-serif'],
-        playfair: ['Playfair', 'sans-serif']
+        montserrat: ['Montserrat', 'sans'],
+        poppins: ['Poppins', 'sans'],
+        playfair: ['Playfair', 'serif']
       },
       colors: {
         'primary': "#E4AC07",

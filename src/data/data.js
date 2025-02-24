@@ -3,6 +3,7 @@ import { shoe7 } from "../assets/images";
 
 const shoes = [
     {
+        id: 1,
         images:[
             {
                 img: shoe7,
@@ -35,6 +36,7 @@ const shoes = [
         ]
     },
     {
+        id:2,
         images:[
             {
                 img: shoe7,
@@ -67,6 +69,7 @@ const shoes = [
         ]
     },
     {
+        id:3,
         images:[
             {
                 img: shoe7,
@@ -100,4 +103,12 @@ const shoes = [
     }
 ]
 
+const sizes  = [
+    {
+        country: "UK",
+        sizes:[4, 5, 5.5, 6.5, 7.5, 8, 9, 9.5, 10.5, 11, 13, 14, 15, 16]
+    }
+]
+
+export {sizes}
 export default shoes

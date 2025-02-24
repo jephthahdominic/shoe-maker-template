@@ -11,14 +11,14 @@ import Categories from '../components/Categories'
 export default function Home() {
   return (
     <div className='h-screen'>
-        <AppHeader />
-        <SideBar/>
-        <Search/>
-        <Main>
-            <SearchBar />
-            <BannerImage src={elech} alt={'banner'}/>
-            <Categories />
-        </Main>
+      <AppHeader />
+      <SideBar/>
+      <Search/>
+      <Main>
+        <SearchBar />
+        <BannerImage src={elech} alt={'banner'}/>
+        <Categories />
+      </Main>
     </div>
   )
 }

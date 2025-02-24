@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 export default function BigProductCard({shoe}) {
   return (
-    <Link className="border border-[1px solid #E5E7EB] rounded-t-[10px]">
+    <Link to={`${shoe.id}`} className="border border-[1px solid #E5E7EB] rounded-t-[10px]">
       <div className="w-[17rem] p-2 bg-[rgba(217,217,217,0.5)] rounded-t-[10px]">
         <img src={shoe.images[0].img} alt={shoe.images[0].alt} className=" object-contain"/>
       </div>
