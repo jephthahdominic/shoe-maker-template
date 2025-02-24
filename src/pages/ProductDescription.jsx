@@ -11,6 +11,7 @@ export default function ProductDescription() {
     const {id} = useParams();
     let product = shoes[id-1];
     const [countrySize, setCountrySize] = useState("UK");
+    const [index, setIndex] = useState(0)
 
   return (
     <div className='max-h-screen'>
@@ -36,20 +37,22 @@ export default function ProductDescription() {
             <section className='px-3 mt-4'>
                 <div className='flex justify-between items-start relative'>
                     <span className='text-[1.5rem] font-serif'>Select Size</span>
-                    <div className='border absolute right-0'>
-                        <div className='flex p-1 gap-10 items-center border-b'>
+                    <div className='border absolute right-0 bg-white'>
+                        <div className='flex p-1 gap-20 items-center border-b'>
                             {countrySize} <FiChevronDown />
                         </div>
-                        <div className='p-1 flex flex-col hidden'>
-                            <div className='py-1'>UK</div>
-                            <div className='py-1'>US</div>
-                            <div className='py-1'>CANADA</div>
+                        <div className='px-1 flex flex-col hidden'>
+                            {
+                                sizes.map((size, index)=>(
+                                    <div className='border-b py-1.5' onClick={()=>alert(index)}>{size.country}</div>
+                                ))
+                            }
                         </div>
                     </div>
                 </div>
                 <div>
                     {
-                        countrySize === sizes.country && sizes.sizes.map((size)=>(
+                        sizes[index].sizes.map((size)=>(
                             <>
                                 <input type="radio" name="" id="" /> {size}
                             </>
