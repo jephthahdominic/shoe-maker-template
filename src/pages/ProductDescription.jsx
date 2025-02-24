@@ -6,13 +6,11 @@ import Main from '../components/Main'
 import shoes, { sizes } from '../data/data'
 import { FiChevronDown, FiChevronUp } from 'react-icons/fi'
 import SideBar from '../components/SideBar'
+import SelectSize from '../components/SelectSize'
 
 export default function ProductDescription() {
     const {id} = useParams();
     let product = shoes[id-1];
-    const [countrySize, setCountrySize] = useState("UK");
-    const [index, setIndex] = useState(0);
-    const [selectCountry, setSelectCountry] = useState(false);
 
   return (
     <div className='max-h-screen'>
@@ -35,33 +33,8 @@ export default function ProductDescription() {
                 <p className='text-[1.125rem] text-dark-gray'>{product.category}</p>
                 <p className='mt-4 text-[1.5rem] font-semibold'>{product.price}</p>
             </section>
-            <section className='px-3 mt-4'>
-                <div className='flex justify-between items-start relative'>
-                    <span className='text-[1.5rem] font-serif'>Select Size</span>
-                    <div className='border absolute right-0 bg-white'>
-                        <div className='flex py-1 px-2 gap-20 items-center' onClick={()=>setSelectCountry(s=>!s)}>
-                            {countrySize} {selectCountry ? <FiChevronDown /> : <FiChevronUp/>}
-                        </div>
-                        <div className= {`flex flex-col ${selectCountry && 'hidden'}`}>
-                            {
-                                sizes.map((size, index)=>(
-                                    <div className='border-t py-1.5 px-2' onClick={()=>alert(index)}>{size.country}</div>
-                                ))
-                            }
-                        </div>
-                    </div>
-                </div>
-                <div className='grid grid-cols-4 gap-4 mt-4'>
-                    {
-                        sizes[index].sizes.map((size)=>(
-                            <div className='border border-light gray rounded-full flex justify-center'>
-                                <label htmlFor="size" className='text-dark-gray'></label>
-                                <input type="radio" name="size" id="size" className='hidden' value={size} /> {size}
-                            </div>
-                        ))
-                    }
-                </div>
-            </section>
+            <SelectSize />
+            
         </Main>
     </div>
   )
