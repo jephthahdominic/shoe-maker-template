@@ -29,7 +29,7 @@ export default function ProductDescription() {
                 </div>
             </section>
             <section className='p-3'>
-                <h1 className='font-playfair font-bold text-[2rem] leading-tight'>{product.productName}</h1>
+                <h1 className='font-playfair font-semibold text-[2rem] leading-tight'>{product.productName}</h1>
                 <p className='text-[1.125rem] text-dark-gray'>{product.category}</p>
                 <p className='mt-4 text-[1.5rem] font-semibold'>{product.price}</p>
             </section>
