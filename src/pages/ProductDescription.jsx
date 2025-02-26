@@ -3,10 +3,12 @@ import { useParams } from 'react-router-dom'
 import AppHeader from '../components/AppHeader'
 import Search from '../components/Search'
 import Main from '../components/Main'
-import shoes, { sizes } from '../data/data'
-import { FiChevronDown, FiChevronUp } from 'react-icons/fi'
+import shoes from '../data/data'
 import SideBar from '../components/SideBar'
 import SelectSize from '../components/SelectSize'
+import PurchaseActions from '../components/PurchaseActions'
+import Description from '../components/Description'
+import Reviews from '../components/Reviews'
 
 export default function ProductDescription() {
     const {id} = useParams();
@@ -34,6 +36,9 @@ export default function ProductDescription() {
                 <p className='mt-4 text-[1.5rem] font-semibold'>{product.price}</p>
             </section>
             <SelectSize />
+            <PurchaseActions/>
+            <Description product = {product}/>
+            <Reviews/>
             
         </Main>
     </div>
