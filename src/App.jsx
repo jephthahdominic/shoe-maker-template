@@ -14,7 +14,7 @@ export default function App() {
           <BrowserRouter>
             <Routes>
               <Route index path='/' element={<Home />}/>
-              <Route path=':id' element={<ProductDescription />}/>
+              <Route path='/:id' element={<ProductDescription />}/>
             </Routes>
           </BrowserRouter>
         </SearchBarProvider>
