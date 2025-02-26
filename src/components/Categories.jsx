@@ -8,7 +8,7 @@ export default function Categories() {
   return (
     <>
         <section className='mt-10 px-3'>
-            <h2 className='font-Sans text-[1.75rem] font-semibold'>Top Orders</h2>
+            <h2 className='font-playfair text-[1.75rem] font-semibold'>Top Orders</h2>
             <div className='w-full flex items-center gap-4 mt-3 overflow-auto scrollbar-hide'>
                 {
                     shoes.map((shoe, key)=>(
@@ -19,7 +19,7 @@ export default function Categories() {
         </section>
         <section className='mt-14 px-3'>
             <div className='flex justify-between items-center px-1'>
-                <h2 className='font-sans text-[1.75rem] font-semibold'>Coporate shoes</h2>
+                <h2 className='font-playfair text-[1.75rem] font-semibold'>Coporate shoes</h2>
                 <Link className='text-[1.125rem] text-darkTransparent'>Explore</Link>
             </div>
             <div className='w-full flex items-center gap-4 mt-3 overflow-auto scrollbar-hide'>
@@ -32,7 +32,7 @@ export default function Categories() {
         </section>
         <section className='mt-14 px-3'>
             <div className='flex justify-between items-center px-1'>
-                <h2 className='font-sans text-[1.75rem] font-semibold'>Sandals</h2>
+                <h2 className='font-playfair text-[1.75rem] font-semibold'>Sandals</h2>
                 <Link className='text-[1.125rem] text-darkTransparent'>Explore</Link>
             </div>
             <div className='w-full flex items-center gap-4 mt-3 overflow-auto scrollbar-hide'>
