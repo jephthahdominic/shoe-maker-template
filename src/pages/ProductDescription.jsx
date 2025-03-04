@@ -20,7 +20,7 @@ export default function ProductDescription() {
         <SideBar />
         <Search/>
         <Main>
-            <section className='w-full bg-light-gray relative pb-4'>
+            <section className='w-full bg-light-gray relative'>
                 <img src={product.images[0].img} alt={product.images[0].alt} className='w-full object-contain'/>
                 <div className='w-full absolute flex p-1.5 gap-2 items-center justify-center bottom-0'>
                     {
@@ -35,10 +35,12 @@ export default function ProductDescription() {
                 <p className='text-[1.125rem] text-dark-gray'>{product.category}</p>
                 <p className='mt-4 text-[1.5rem] font-semibold'>{product.price}</p>
             </section>
-            <SelectSize />
-            <PurchaseActions/>
-            <Description product = {product}/>
-            <Reviews/>
+            <section>
+                <SelectSize />
+                <PurchaseActions/>
+                <Description product = {product}/>
+                <Reviews/>
+            </section>
             
         </Main>
     </div>
