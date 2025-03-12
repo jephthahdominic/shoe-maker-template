@@ -41,6 +41,10 @@ export default {
         appearTTB:{
           '0%': {marginTop: '-900px'},
           '100%':{marginTop: '0px'}
+        },
+        expand:{
+          '0%': {padding: '12px'},
+          '100%': {padding: '15px'}
         }
       },
       animation: {
@@ -49,7 +53,8 @@ export default {
         return:'return .5s ease-in-out',
         appearRTL: 'appearRTL .2s linear',
         appearLTR: 'appearLTR .4s linear',
-        appearTTB: 'appearTTB .3s linear'
+        appearTTB: 'appearTTB .3s linear',
+        expand: 'expand .2s linear'
       },
       fontFamily: {
         montserrat: ['Montserrat', 'sans'],
