@@ -27,6 +27,9 @@ export default function Reviews() {
         <h2 className='font-sans font-regular text-[1.5rem]'>Reviews</h2>
         <StarRating value={calculateAvgRating()}/>
       </header>
+      <section className='w-full my-4'>
+        <input type="text" className='w-full bg-light-gray p-2 rounded-[10px]' placeholder='Write a review'/>
+      </section>
       <section className='w-full mt-6 flex flex-col gap-8'>
         {reviews.map((review)=>(
           <div className='w-full'>
