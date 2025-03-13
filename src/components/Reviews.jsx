@@ -1,4 +1,3 @@
-import {React, } from 'react'
 import {useParams} from 'react-router-dom'
 import shoes from '../data/data';
 import StarRating from './StarRating';
@@ -32,7 +31,7 @@ export default function Reviews() {
         <textarea className='w-full bg-light-gray p-3 rounded-[10px] focus:outline-none' placeholder='Write a review' 
         disabled/>
       </section>
-      <section className='w-full mt-6 flex flex-col gap-3 items-end'>
+      <section className='w-full mt-6 flex flex-col gap-8 items-end'>
         {reviews.slice(0,3).map((review, key)=>(
           <div className='w-full' key={key}>
             <div className='flex gap-2 items-center'>
