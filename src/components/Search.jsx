@@ -17,15 +17,15 @@ export default function Search() {
   return (
     <div className={`w-full h-screen fixed z-40 top-0 bg-[rgba(0,0,0,0.37)]
     animate-fade ${state.isActive ? 'block':'hidden'}`}>
-        <div className='bg-white mt-0 h-full w-full p-2 pt-3 animate-appearTTB'>
+        <div className='bg-[#fafafa] mt-0 h-full w-full p-2 pt-3 animate-appearTTB'>
             <div className='flex items-center gap-3 w-full'>
                 <button onClick={()=>dispatch({type:"closeSearch"})}><FiChevronLeft className='text-[24px]'/></button>
-                <div className="relative flex-1 bg-white text-[#707072]">
+                <div className="relative flex-1 bg-white text-[#707072] rounded-[100px]">
                     <input 
                         type="text" 
                         placeholder="Search for shoes and sandals" 
-                        className="w-full py-3 rounded-[100px] border border-[1px solid E5E7EB] pr-10 pl-4 
-                            border-2 outline-none bg-white focus:border-primary"
+                        className="w-full py-3 rounded-[100px] pr-10 pl-4 
+                            border outline-none bg-white border-primary"
                         autoFocus
                         onChange={(e)=>dispatch({type:"isTyping", payload:e.target.value})}
                         value={state.searchQuery}

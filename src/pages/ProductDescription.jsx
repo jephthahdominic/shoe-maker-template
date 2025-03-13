@@ -9,6 +9,8 @@ import SelectSize from '../components/SelectSize'
 import PurchaseActions from '../components/PurchaseActions'
 import Description from '../components/Description'
 import Reviews from '../components/Reviews'
+import Banner from '../components/Banner'
+import ScrollableProductImages from '../components/ScrollableProductImages'
 
 export default function ProductDescription() {
     const {id} = useParams();
@@ -20,20 +22,11 @@ export default function ProductDescription() {
         <SideBar />
         <Search/>
         <Main>
-            <section className='w-full bg-light-gray relative'>
-                <img src={product.images[0].img} alt={product.images[0].alt} className='w-full object-contain'/>
-                <div className='w-full absolute flex p-1.5 gap-2 items-center justify-center bottom-0'>
-                    {
-                        product.images.map((image)=>(
-                            <div className='p-1 bg-white'></div>
-                        ))
-                    }
-                </div>
-            </section>
+            <ScrollableProductImages images={product.images}/>
             <section className='p-3'>
-                <h1 className='font-playfair font-semibold text-[2rem] leading-tight'>{product.productName}</h1>
+                <h1 className='font-playfair font-semibold text-[2rem] leading-tight text-[#212121]'>{product.productName}</h1>
                 <p className='text-[1.125rem] text-dark-gray'>{product.category}</p>
-                <p className='mt-4 text-[1.5rem] font-semibold'>{product.price}</p>
+                <p className='mt-4 text-[1.5rem] font-semibold text-[#212121]'>{product.price}</p>
             </section>
             <section>
                 <SelectSize />

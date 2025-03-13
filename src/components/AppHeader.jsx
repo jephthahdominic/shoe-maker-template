@@ -8,7 +8,7 @@ export default function AppHeader({showSearchButton}) {
   const {setIsSidebarOpen} = useSidebar();
   const {dispatch} = useSearch();
   return (
-    <header className='w-full py-3 px-4 bg-white shadow-md flex items-center justify-between'>
+    <header className='w-full py-3 px-4 shadow-md flex items-center justify-between'>
         <Logo />
         <div className='flex gap-8 text-[24px]'>
             {showSearchButton && <FiSearch onClick={()=>dispatch({type:"openSearch"})}/>}

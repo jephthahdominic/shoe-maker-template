@@ -10,7 +10,7 @@ import Categories from '../components/Categories'
 
 export default function Home() {
   return (
-    <div className='h-screen'>
+    <div className='max-h-screen overflow-auto bg-[#fafafa]'>
       <AppHeader />
       <SideBar/>
       <Search/>

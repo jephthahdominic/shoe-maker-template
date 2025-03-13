@@ -2,8 +2,6 @@ import {React, } from 'react'
 import {useParams} from 'react-router-dom'
 import shoes from '../data/data';
 import StarRating from './StarRating';
-import { BiUserCircle } from 'react-icons/bi';
-import { FaUser } from 'react-icons/fa';
 import { FaCircleUser } from 'react-icons/fa6';
 
 export default function Reviews() {
@@ -31,8 +29,8 @@ export default function Reviews() {
         <input type="text" className='w-full bg-light-gray p-2 rounded-[10px]' placeholder='Write a review'/>
       </section>
       <section className='w-full mt-6 flex flex-col gap-8'>
-        {reviews.map((review)=>(
-          <div className='w-full'>
+        {reviews.map((review, key)=>(
+          <div className='w-full' key={key}>
             <div className='flex gap-2 items-center'>
               <FaCircleUser className='text-[#D9D9D9] text-[3.5rem]'/>
               <div className='flex flex-col gap-1'>
