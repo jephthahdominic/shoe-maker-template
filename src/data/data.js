@@ -32,6 +32,16 @@ const shoes = [
                 customer: "John Doe",
                 rating: 5,
                 review: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+            },
+            {
+                customer: "John Doe",
+                rating: 5,
+                review: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+            },
+            {
+                customer: "John Doe",
+                rating: 5,
+                review: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
             }
         ]
     },
@@ -96,7 +106,7 @@ const shoes = [
             },
             {
                 customer: "John Doe",
-                rating: 4,
+                rating: 3,
                 review: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
             },
             {

@@ -4,7 +4,7 @@ import { IoStar, IoStarOutline } from 'react-icons/io5';
 export default function StarRating({value, maxStars = 5}) {
 
   return (
-    <div className='flex gap-1'>
+    <div className='flex gap-1 items-center'> 
       {Array.from({length: maxStars}, (_, i) => (
         <span key={i}>
           {i < value ? 
@@ -12,7 +12,7 @@ export default function StarRating({value, maxStars = 5}) {
             <IoStarOutline className='text-primary text-[1.125rem]'/>
           }
         </span>
-      ))}
+      ))} 
     </div>
   )
 }
