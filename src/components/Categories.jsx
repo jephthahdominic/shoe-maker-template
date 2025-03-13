@@ -1,8 +1,6 @@
-import React, { useState } from 'react'
 import { useProducts } from '../contexts/ProductContext'
 import { Link } from 'react-router-dom'
 import BigProductCard from './BigProductCard'
-import { FaChevronLeft, FaChevronRight } from 'react-icons/fa'
 
 export default function Categories() {
     const {shoes} = useProducts();

@@ -1,4 +1,3 @@
-import React, { useState } from 'react'
 import { useParams } from 'react-router-dom'
 import AppHeader from '../components/AppHeader'
 import Search from '../components/Search'
@@ -9,7 +8,6 @@ import SelectSize from '../components/SelectSize'
 import PurchaseActions from '../components/PurchaseActions'
 import Description from '../components/Description'
 import Reviews from '../components/Reviews'
-import Banner from '../components/Banner'
 import ScrollableProductImages from '../components/ScrollableProductImages'
 
 export default function ProductDescription() {
@@ -18,7 +16,7 @@ export default function ProductDescription() {
 
   return (
     <div className='max-h-screen'>
-        <AppHeader showSearchButton={true}/>
+        <AppHeader showSearchButton={true} showCart={true} showSideBar={true}/>
         <SideBar />
         <Search/>
         <Main>

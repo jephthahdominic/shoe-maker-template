@@ -1,4 +1,3 @@
-import React from 'react'
 import AppHeader from '../components/AppHeader'
 import Main from '../components/Main'
 import SideBar from '../components/SideBar'
@@ -11,7 +10,7 @@ import Categories from '../components/Categories'
 export default function Home() {
   return (
     <div className='max-h-screen overflow-auto bg-[#fafafa]'>
-      <AppHeader />
+      <AppHeader showSideBar={true} showCart={true}/>
       <SideBar/>
       <Search/>
       <Main>
