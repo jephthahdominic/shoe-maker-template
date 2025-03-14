@@ -12,7 +12,7 @@ export default function AppHeader({showSearchButton, showCart, showSideBar}) {
         <Logo />
         <div className='flex gap-8 text-[24px]'>
           {showSearchButton && <FiSearch onClick={()=>dispatch({type:"openSearch"})}/>}
-          {showCart && <Link to='cart'><FiShoppingCart /></Link>}
+          {showCart && <Link to='/cart'><FiShoppingCart /></Link>}
           {showSideBar && <button onClick={()=>setIsSidebarOpen((s)=>!s)}><FiMenu /></button>}
         </div>
     </header>

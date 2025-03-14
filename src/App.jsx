@@ -6,6 +6,7 @@ import { ProductProvider } from './contexts/ProductContext'
 import ProductDescription from './pages/ProductDescription'
 import Signup from './pages/Signup';
 import Signin from './pages/Signin';
+import ShoppingCart from './pages/ShoppingCart';
 
 export default function App() {
   return (
@@ -15,9 +16,10 @@ export default function App() {
           <BrowserRouter>
             <Routes>
               <Route index path='/' element={<Home />}/>
-              <Route path='/:id' element={<ProductDescription />}/>
+              <Route path=':id' element={<ProductDescription />}/>
               <Route path ='/signup' element={<Signup />} />
               <Route path ='/signin' element={<Signin />} />
+              <Route path ='/cart' element={<ShoppingCart />} />
             </Routes>
           </BrowserRouter>
         </SearchBarProvider>

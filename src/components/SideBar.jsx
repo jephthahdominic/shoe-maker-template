@@ -1,11 +1,15 @@
-import React from 'react'
 import { FiUser } from 'react-icons/fi'
 import { IoClose } from 'react-icons/io5'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { useSidebar } from '../contexts/SidebarContext'
 
 export default function SideBar() {
     const {isSidebarOpen, setIsSidebarOpen} = useSidebar();
+    const navigate = useNavigate();
+    function navigateToHome(){
+        navigate('/');
+        setIsSidebarOpen(s => !s)
+    }
   return (
     <div className={`w-full h-screen flex justify-end fixed z-40 top-0 bg-[rgba(0,0,0,0.37)] ${!isSidebarOpen && 'hidden'} animate-fade`}>
         <nav className='fixed z-40 bg-white h-full w-[85%] animate-appearRTL'>
@@ -18,7 +22,7 @@ export default function SideBar() {
                 </div>
             </header>
             <div className='px-4 mt-6'>
-                <Link to='/' className='font-sans font-bold text-2xl'>Home</Link>
+                <span className='font-sans font-bold text-2xl' onClick={()=>navigateToHome()}>Home</span>
                 <h1 className='font-sans font-bold text-2xl mt-4'>Categories</h1>
                 <ul className='mt-3 flex flex-col gap-3'>
                     <li className='py-1'>
