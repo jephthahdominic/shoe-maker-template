@@ -9,10 +9,27 @@ import PurchaseActions from '../components/PurchaseActions'
 import Description from '../components/Description'
 import Reviews from '../components/Reviews'
 import ScrollableProductImages from '../components/ScrollableProductImages'
+import { useDispatch } from 'react-redux'
+import { add } from '../features/shoppingCart/CartSlice'
+import { useState } from 'react'
 
 export default function ProductDescription() {
     const {id} = useParams();
     let product = shoes[id-1];
+    
+    const [selectedSize, setSelectedSize] = useState(null);
+    const [isError, setIsError] = useState(false)
+
+    
+    const dispatch = useDispatch()
+    
+    function addToCart(){
+        if(selectedSize === null) {
+            setIsError(true)
+            return;
+        }
+        dispatch(add({...product, size:selectedSize}))
+    }
 
   return (
     <div className='max-h-screen'>
@@ -27,8 +44,8 @@ export default function ProductDescription() {
                 <p className='mt-4 text-[1.5rem] font-semibold text-[#212121]'>{product.price}</p>
             </section>
             <section>
-                <SelectSize />
-                <PurchaseActions/>
+                <SelectSize selectedSize={selectedSize} setSelectedSize={setSelectedSize} isError={isError} setIsError = {setIsError}/>
+                <PurchaseActions addToCart={()=>addToCart()} id={product.id}/>
                 <Description product = {product}/>
                 <Reviews/>
             </section>

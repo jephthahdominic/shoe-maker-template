@@ -1,12 +1,11 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { FiChevronDown, FiChevronUp } from 'react-icons/fi';
 import { sizes } from '../data/data';
 
-export default function SelectSize() {
+export default function SelectSize({selectedSize, setSelectedSize, isError , setIsError}) {
     const [countrySize, setCountrySize] = useState("EU");
     const [index, setIndex] = useState(0);
     const [changeCountry, setChangeCountry] = useState(false);
-    const [selectedSize, setSelectedSize] = useState(null);
 
     function selectCountry(country, index){
         setIndex(index)
@@ -16,7 +15,7 @@ export default function SelectSize() {
     }
     
   return (
-    <section className='px-3 mt-4'>
+    <section className={`px-3 py-5 mt-4 ${isError && 'border-2 border-red-600'}`} id='selectSize'>
         <div className='flex justify-between items-start relative'>
             <span className='text-[1.5rem] font-serif text-[#212121]'>Select Size</span>
             <div className='border absolute right-0 bg-white'>
@@ -37,7 +36,11 @@ export default function SelectSize() {
             {
                 sizes[index].sizes.map((size, id)=>(
                     <div className='' key={id}>
-                        <label htmlFor="size" className={`${selectedSize === size && 'bg-primary text-[#f8f8f8]'} text-[#666666] border-2 border-light-gray shadow-sm shadow-light-gray rounded-full flex justify-center p-2`} onClick={()=>setSelectedSize(size)}> {size}</label>
+                        <label htmlFor="size" className={`${selectedSize === size && 'bg-primary text-[#f8f8f8]'} text-[#666666] border-2 border-light-gray shadow-sm shadow-light-gray rounded-full flex justify-center p-2`} 
+                        onClick={()=>{
+                            setSelectedSize(size);
+                            setIsError(false)
+                        }}> {size}</label>
                         <input type="radio" name="size" id="size" className='hidden' value={size} />
                     </div>
                 ))
