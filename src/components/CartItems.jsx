@@ -7,7 +7,7 @@ export default function CartItems() {
   if(items.length === 0){
     return (
       <div className='mt-4 text-center p-8'>
-          <p className="text-[2rem] text-[#757575]">Oops!, There is no item in your cart</p> 
+          <p className="text-[1.5rem] text-[#757575]">Oops!, There is no item in your cart</p> 
       </div>
     )
   }
